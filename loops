@@ -1,0 +1,376 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+// Program 1: Display pattern using while loop
+int main() {
+    int a = 1, b = 5;
+    cout << "a\tb\n";
+    while (a <= 5) {
+        cout << a << "\t" << b << "\n";
+        a++;
+        b--;
+    }
+}
+
+// Program 2: Display sum pattern using while loop
+int main() {
+    int num = 1, sum = 0;
+    cout << "num\tsum\n";
+    while (num <= 5) {
+        sum += num;
+        cout << num << "\t" << sum << "\n";
+        num++;
+    }
+}
+
+// Program 3: Sum of series 1 + 1/4 + 1/8 + ... + 1/100 using do-while
+int main() {
+    double sum = 1.0;
+    int i = 4;
+    do {
+        sum += 1.0 / i;
+        i *= 2;
+    } while (i <= 100);
+    cout << "Sum of series: " << sum << endl;
+}
+
+// Program 4: Display alphabets from A to Z using for loop
+int main() {
+    for (char ch = 'A'; ch <= 'Z'; ch++) {
+        cout << ch << " ";
+    }
+    cout << endl;
+}
+
+// Program 5: Find largest, smallest, and average of n numbers
+int main() {
+    int n, num, maxNum, minNum, sum = 0;
+    cout << "Enter the number of values: ";
+    cin >> n;
+    for (int i = 0; i < n; i++) {
+        cin >> num;
+        if (i == 0) {
+            maxNum = minNum = num;
+        } else {
+            if (num > maxNum) maxNum = num;
+            if (num < minNum) minNum = num;
+        }
+        sum += num;
+    }
+    cout << "Max: " << maxNum << " Min: " << minNum << " Avg: " << (sum / (double)n) << endl;
+}
+
+// Program 6: Ask a question 20 times and count answers
+int main() {
+    int answers[4] = {0};
+    int choice;
+    for (int i = 0; i < 20; i++) {
+        cout << "Enter your answer (1-4): ";
+        cin >> choice;
+        if (choice >= 1 && choice <= 4) {
+            answers[choice - 1]++;
+        }
+    }
+    for (int i = 0; i < 4; i++) {
+        cout << "Answer " << (i + 1) << " was chosen " << answers[i] << " times.\n";
+    }
+}
+
+// Program 7: Find minimum of 20 numbers
+void findMin() {
+    int num, minNum;
+    cin >> minNum;
+    for (int i = 1; i < 20; i++) {
+        cin >> num;
+        if (num < minNum) minNum = num;
+    }
+    cout << "Minimum value: " << minNum << endl;
+}
+
+// Program 8: Fibonacci series up to n
+int main(){
+    int a = 0, b = 1, next;
+    while (a <= n) {
+        cout << a << " ";
+        next = a + b;
+        a = b;
+        b = next;
+    }
+    cout << endl;
+}
+
+// Program 9: Armstrong numbers up to n
+int main() {
+    for (int num = 1; num <= n; num++) {
+        int sum = 0, temp = num, digits = log10(num) + 1;
+        while (temp) {
+            sum += pow(temp % 10, digits);
+            temp /= 10;
+        }
+        if (sum == num) cout << num << " ";
+    }
+    cout << endl;
+}
+
+// Program 10: Perfect numbers up to n
+int main() {
+    for (int num = 1; num <= n; num++) {
+        int sum = 0;
+        for (int i = 1; i < num; i++) {
+            if (num % i == 0) sum += i;
+        }
+        if (sum == num) cout << num << " ";
+    }
+    cout << endl;
+}
+
+// Program 11: Find highest and second highest marks
+int main() {
+    int n, mark, highest = 0, secondHighest = 0;
+    cin >> n;
+    for (int i = 0; i < n; i++) {
+        cin >> mark;
+        if (mark > highest) {
+            secondHighest = highest;
+            highest = mark;
+        } else if (mark > secondHighest) secondHighest = mark;
+    }
+    cout << "Highest: " << highest << " Second Highest: " << secondHighest << endl;
+}
+
+// Program 12: Average of numbers until 9999
+int main(){
+    int num, count = 0, sum = 0;
+    while (cin >> num && num != 9999) {
+        sum += num;
+        count++;
+    }
+    cout << "Average: " << (sum / (double)count) << endl;
+}
+
+// Program 13: Prime numbers less than n
+int main() {
+    for (int i = 2; i < n; i++) {
+        bool prime = true;
+        for (int j = 2; j * j <= i; j++) {
+            if (i % j == 0) {
+                prime = false;
+                break;
+            }
+        }
+        if (prime) cout << i << " ";
+    }
+    cout << endl;
+}
+
+// Program 14: Factorial calculation loop
+int main() {
+    int num;
+    while (true) {
+        cin >> num;
+        if (num == 0) break;
+        int fact = 1;
+        for (int i = 2; i <= num; i++) fact *= i;
+        cout << "Factorial: " << fact << endl;
+    }
+}
+
+int main() {
+    return 0;
+}
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+// Program 15: Check if a number is prime
+bool isPrime(int n) {
+    if (n <= 1) return false;
+    for (int i = 2; i <= sqrt(n); i++) {
+        if (n % i == 0) return false;
+    }
+    return true;
+}
+
+// Program 16: Find the second largest number
+int main() {
+    int num, largest = 0, secondLargest = 0;
+    while (true) {
+        cin >> num;
+        if (num == 0) break;
+        if (num > largest) {
+            secondLargest = largest;
+            largest = num;
+        } else if (num > secondLargest) {
+            secondLargest = num;
+        }
+    }
+    cout << "Second Largest: " << secondLargest << endl;
+}
+
+// Program 17: Count positive and negative numbers
+int main() {
+    int n, num, posCount = 0, negCount = 0;
+    cin >> n;
+    for (int i = 0; i < n; i++) {
+        cin >> num;
+        if (num > 0) posCount++;
+        else if (num < 0) negCount++;
+    }
+    cout << "Positive: " << posCount << ", Negative: " << negCount << endl;
+}
+
+// Program 18: Sum of x^1 + x^2 + ... + x^n
+int main() {
+    int sum = 0;
+    for (int i = 1; i <= n; i++) {
+        sum += pow(x, i);
+    }
+    return sum;
+}
+
+// Program 19: Sum of 1 + 2x + 3x^2 + 4x^3 + 5x^4
+int main() {
+    int sum = 0;
+    for (int i = 1; i <= n; i++) {
+        sum += i * pow(x, i - 1);
+    }
+    return sum;
+}
+
+// Program 20: Sum of 1/2 + 2/3 + 3/4 + ... + 99/100
+int main() {
+    double sum = 0;
+    for (int i = 1; i < 100; i++) {
+        sum += (double)i / (i + 1);
+    }
+    return sum;
+}
+
+// Program 21: Print sequence 1024, 512, 256, ..., 1
+int main() {
+    for (int i = 1024; i >= 1; i /= 2) {
+        cout << i << " ";
+    }
+    cout << endl;
+}
+
+// Program 22: Print sequence 1, 3, 9, 27, ..., 200
+int main() {
+    for (int i = 1; i <= 200; i *= 3) {
+        cout << i << " ";
+    }
+    cout << endl;
+}
+
+// Program 23: Print sequence 8, 12, 17, ..., 100
+int main() {
+    for (int i = 8; i <= 100; i += (i - 6)) {
+        cout << i << " ";
+    }
+    cout << endl;
+}
+
+// Program 24: Sum of 1/1! + 2/2! + 3/3! + ...
+double sumFactorialSeries() {
+    double sum = 0;
+    int fact = 1;
+    for (int i = 1; i <= 7; i++) {
+        fact *= i;
+        sum += (double)i / fact;
+    }
+    return sum;
+}
+
+// Program 25: Sum of 30 + 33 + 36 + ... + 60
+int main() {
+    int sum = 0;
+    for (int i = 30; i <= 60; i += 3) {
+        sum += i;
+    }
+    return sum;
+}
+
+// Program 26: Sum of 1 + x^2/2! + x^3/3! + ...
+int main() {
+    double sum = 1;
+    int fact = 1;
+    for (int i = 1; i <= n; i++) {
+        fact *= i;
+        sum += pow(x, i) / fact;
+    }
+    return sum;
+}
+
+// Program 27: Sum of 1 - x^2/2! + x^4/4! - ... n
+int main() {
+    double sum = 1;
+    int fact = 1;
+    for (int i = 2; i <= n; i += 2) {
+        fact *= i * (i - 1);
+        sum += pow(x, i) / fact * (i % 4 == 0 ? 1 : -1);
+    }
+    return sum;
+}
+
+// Program 28: Find factors of a number
+int main() {
+    for (int i = 1; i <= num; i++) {
+        if (num % i == 0) cout << i << " ";
+    }
+    cout << endl;
+}
+
+// Program 29: Sum specified number of values
+int main(){
+    int count, num, sum = 0;
+    cin >> count;
+    for (int i = 0; i < count; i++) {
+        cin >> num;
+        sum += num;
+    }
+    cout << "Sum: " << sum << endl;
+}
+
+// Program 30: Savings with compound interest
+double compoundInterest(double p, double r, int n) {
+    return p * pow(1 + r, n);
+}
+
+int main() {
+    // Example calls
+    cout << "Prime check: " << isPrime(7) << endl;
+    secondLargest();
+    countNumbers();
+    cout << "Sum power series: " << sumPowerSeries(2, 4) << endl;
+    cout << "Sum modified series: " << sumModifiedSeries(2, 4) << endl;
+    cout << "Sum fraction series: " << sumFractionSeries() << endl;
+    printSequence1();
+    printSequence2();
+    printSequence3();
+    cout << "Sum factorial series: " << sumFactorialSeries() << endl;
+    cout << "Sum arithmetic series: " << sumArithmeticSeries() << endl;
+    cout << "Sum exponential series: " << sumExponentialSeries(2, 4) << endl;
+    cout << "Sum alternating series: " << sumAlternatingSeries(2, 4) << endl;
+    findFactors(28);
+    sumSpecifiedValues();
+    cout << "Compound Interest: " << compoundInterest(1000, 0.05, 10) << endl;
+    return 0;
+}
+//For show this series 1 -4  7 -10 ……..-40 
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main(){
+int i,a=1,p;
+for(i=1; a<=40; i++ ){
+	if(i%2==0){
+		p=-a;
+		cout<<p<<" ";
+	}
+	else 
+	cout<<a<<" ";
+	a+=3;
+}
+	return 0;
+}

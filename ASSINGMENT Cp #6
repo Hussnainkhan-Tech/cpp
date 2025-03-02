@@ -1,0 +1,839 @@
+GOVERNMENT GRADUATE COLLEGE BUREWALA
+
+NAME__HUSNAIN KHAN__________:	CLASS____BSCS__(SEM 1ST)______
+ROLL NO #_____47______________:  	HOD___PRO.RANA NADEEM  SHAB___
+SUBJECT____FUNDAMENTAL_PROGRAMMING____(C++)
+ASSIGNMENT NO 4
+Program 1: Display pattern using while loop 
+#include <iostream>
+#include <cmath>
+using namespace std;
+Int main()
+{
+    int a = 1, b = 5;
+    cout << "a\tb\n";
+    while (a <= 5)
+ {
+        cout << a << "\t" << b << "\n";
+        a++;
+        b--;
+    }
+return 0;
+}
+Program 2: Display sum pattern using while loop
+#include <iostream>
+#include <cmath>
+using namespace std;
+Int main(){
+    int num = 1, sum = 0;
+    cout << "num<<\t<<sum<<\n";
+    while (num <= 5) {
+        sum += num;
+        cout << num << "\t" << sum << "\n";
+        num++;
+    }
+return 0;
+}
+ Program 3: Sum of series 1 + 1/4 + 1/8 + ... + 1/100 using do-while
+#include <iostream>
+#include <cmath>
+using namespace std;
+Int main()
+{
+    double sum = 1.0;
+    int i = 4;
+    do {
+     sum += 1.0 / i;
+        i *= 2;
+    } while (i <= 100);
+    cout << "Sum of series: " << sum << endl;
+
+}return 0;
+}
+Program 4: Display alphabets from A to Z using for loop
+#include <iostream>
+using namespace std;
+Int main(){
+    for (char ch = 'A'; ch <= 'Z'; ch++)
+ {
+        cout << ch << " ";
+    }
+    cout << endl;
+}return 0;
+    }
+Program 5: Find largest, smallest, and average of n numbers
+#include <iostream>
+using namespace std;
+Int main(){
+    int n, num, maxNum, minNum, sum = 0;
+    cout << "Enter the number of values: ";
+    cin >> n;
+    for (int i = 0; i < n; i++) {
+        cin >> num;
+        if (i == 0) {
+            maxNum = minNum = num;
+        } else {
+            if (num > maxNum) maxNum = num;
+            if (num < minNum) minNum = num;
+        }
+        sum += num;
+    }
+    cout << "Max: " << maxNum << " Min: " << minNum << " Avg: " << (sum / (double)n) << endl;
+}return 0;
+}
+Program 6: Ask a question 20 times and count answers
+#include <iostream>
+using namespace std;
+Int main(){
+    int answers[4] = {0};
+    int choice;
+    for (int i = 0; i < 20; i++) {
+        cout << "Enter your answer (1-4): ";
+        cin >> choice;
+        if (choice >= 1 && choice <= 4) {
+            answers[choice - 1]++;
+        }
+    }
+    for (int i = 0; i < 4; i++) {
+        cout << "Answer " << (i + 1) << " was chosen " << answers[i] << " times.\n";
+    }return 0;
+}
+
+ Program 7: Find minimum of 20 numbers
+#include <iostream>
+using namespace std;
+Int main(){
+    int num, minNum;
+    cin >> minNum;
+    for (int i = 1; i < 20; i++) {
+        cin >> num;
+        if (num < minNum) minNum = num;
+    }
+    cout << "Minimum value: " << minNum << endl;
+}return 0;
+}
+Program 8: Fibonacci series up to n
+#include <iostream>
+using namespace std;
+Int main(){
+    int a = 0, b = 1, next;
+    while (a <= n) {
+        cout << a << " ";
+        next = a + b;
+        a = b;
+        b = next;
+    }
+    cout << endl;
+}return 0;
+}
+Program 9: Armstrong numbers up to n
+#include <iostream>
+using namespace std;
+Int main(){
+    for (int num = 1; num <= n; num++) {
+        int sum = 0, temp = num, digits = log10(num) + 1;
+        while (temp) {
+            sum += pow(temp % 10, digits);
+            temp /= 10;
+        }
+        if (sum == num) cout << num << " ";
+    }
+    cout << endl;
+}return 0;
+}
+ Program 10: Perfect numbers up to n
+#include <iostream>
+using namespace std;
+Int main() {
+    for (int num = 1; num <= n; num++) {
+        int sum = 0;
+        for (int i = 1; i < num; i++) {
+            if (num % i == 0) sum += i;
+        }
+        if (sum == num) cout << num << " ";
+    }
+    cout << endl;
+}return 0;
+}
+Program 11: Find highest and second highest marks
+#include <iostream>
+using namespace std;
+Int main(){
+    int n, mark, highest = 0, secondHighest = 0;
+    cin >> n;
+    for (int i = 0; i < n; i++) {
+        cin >> mark;
+        if (mark > highest) {
+            secondHighest = highest;
+            highest = mark;
+        } else if (mark > secondHighest) secondHighest = mark;
+    }
+    cout << "Highest: " << highest << " Second Highest: " << secondHighest << endl;
+}return 0;
+}
+
+ Program 12: Average of numbers until 9999
+#include <iostream>
+using namespace std;
+Int main(){
+    int num, count = 0, sum = 0;
+    while (cin >> num && num != 9999) {
+        sum += num;
+        count++;
+    }
+    cout << "Average: " << (sum / (double)count) << endl;
+}return 0;
+}
+Program 13: Prime numbers less than n
+#include <iostream>
+using namespace std;
+Int main() {
+    for (int i = 2; i < n; i++) {
+        bool prime = true;
+        for (int j = 2; j * j <= i; j++) {
+            if (i % j == 0) {
+                prime = false;
+                break;
+            }
+        }
+        if (prime) cout << i << " ";
+    }
+    cout << endl;
+}return 0;
+}
+program 14: Factorial calculation loop
+#include <iostream>
+using namespace std;
+Int main(){
+    int num;
+    while (true) {
+        cin >> num;
+        if (num == 0) break;
+        int fact = 1;
+        for (int i = 2; i <= num; i++) fact *= i;
+        cout << "Factorial: " << fact << endl;
+    }
+}return 0;
+}
+Program 15: Check if a number is prime
+#include <iostream>
+using namespace std;
+Int main() {
+    if (n <= 1) return false;
+    for (int i = 2; i <= sqrt(n); i++) {
+        if (n % i == 0) return false;
+    }
+    Return 0;
+}
+Program 16: Find the second largest number
+#include <iostream>
+using namespace std;
+Int main(){
+    int num, largest = 0, secondLargest = 0;
+    while (true) {
+        cin >> num;
+        if (num == 0) break;
+        if (num > largest) {
+            secondLargest = largest;
+            largest = num;
+        } else if (num > secondLargest) {
+            secondLargest = num;
+        }
+    }
+    cout << "Second Largest: " << secondLargest << endl;
+}return 0;
+}
+ Program 17: Count positive and negative numbers
+#include <iostream>
+using namespace std;
+Int main(){
+    int n, num, posCount = 0, negCount = 0;
+    cin >> n;
+    for (int i = 0; i < n; i++) {
+        cin >> num;
+        if (num > 0) posCount++;
+        else if (num < 0) negCount++;
+    }
+    cout << "Positive: " << posCount << ", Negative: " << negCount << endl;
+}return 0;
+}
+ Program 18: Sum of x^1 + x^2 + ... + x^n
+#include <iostream>
+using namespace std;
+Int main(){
+    int sum = 0;
+    for (int i = 1; i <= n; i++) {
+        sum += pow(x, i);
+    }
+    return 0;
+}
+ Program 19: Sum of 1 + 2x + 3x^2 + 4x^3 + 5x^4
+#include <iostream>
+using namespace std;
+Int main(){
+    int sum = 0;
+    for (int i = 1; i <= n; i++) {
+        sum += i * pow(x, i - 1);
+    }
+    return 0;
+}
+Program 20: Sum of 1/2 + 2/3 + 3/4 + ... + 99/100
+#include <iostream>
+using namespace std;
+Int main(){
+    double sum = 0;
+    for (int i = 1; i < 100; i++) {
+        sum += (double)i / (i + 1);
+    }
+    return 0;
+}
+ Program 21: Print sequence 1024, 512, 256, ..., 1
+#include <iostream>
+using namespace std;
+Int main(){
+    for (int i = 1024; i >= 1; i /= 2) {
+        cout << i << " ";
+    }
+    cout << endl;
+}return 0;
+}
+ Program 22: Print sequence 1, 3, 9, 27, ..., 200
+#include <iostream>
+using namespace std;
+int main(){
+    for (int i = 1; i <= 200; i *= 3) {
+        cout << i << " ";
+    }
+    cout << endl;
+}return 0;}
+ Program 23: Print sequence 8, 12, 17, ..., 100
+#include <iostream>
+using namespace std;
+int main(){
+    for (int i = 8; i <= 100; i += (i - 6)) {
+        cout << i << " ";
+    }
+    cout << endl;
+}return 0;
+}
+Program 24: Sum of 1/1! + 2/2! + 3/3! + ...
+#include <iostream>
+using namespace std;
+Int main({
+    double sum = 0;
+    int fact = 1;
+    for (int i = 1; i <= 7; i++) {
+        fact *= i;
+        sum += (double)i / fact;
+    }
+    return 0;
+}
+Program 25: Sum of 30 + 33 + 36 + ... + 60
+#include <iostream>
+using namespace std;
+Int main(){
+    int sum = 0;
+    for (int i = 30; i <= 60; i += 3) {
+        sum += i;
+    }
+    return 0;
+}
+ Program 26: Sum of 1 + x^2/2! + x^3/3! + ...
+#include <iostream>
+using namespace std;
+Int main(){
+    double sum = 1;
+    int fact = 1;
+    for (int i = 1; i <= n; i++) {
+        fact *= i;
+        sum += pow(x, i) / fact;
+    }
+    return 0;
+}
+Program 27: Sum of 1 - x^2/2! + x^4/4! - ... n
+#include <iostream>
+using namespace std;
+#include <iostream>
+using namespace std;
+Int main(){
+    double sum = 1;
+    int fact = 1;
+    for (int i = 2; i <= n; i += 2) {
+        fact *= i * (i - 1);
+        sum += pow(x, i) / fact * (i % 4 == 0 ? 1 : -1);
+    }
+    return 0;
+}
+ Program 28: Find factors of a number
+#include <iostream>
+using namespace std;
+Int main(){
+    for (int i = 1; i <= num; i++) {
+        if (num % i == 0) cout << i << " ";
+    }
+    cout << endl;
+}return 0;
+}
+Program 29: Sum specified number of values
+#include <iostream>
+using namespace std;
+Int main(){
+    int count, num, sum = 0;
+    cin >> count;
+    for (int i = 0; i < count; i++) {
+        cin >> num;
+        sum += num;
+    }
+    cout << "Sum: " << sum << endl;
+}
+Return 0;
+}
+Program 30: Savings with compound interest
+#include <iostream>
+using namespace std;
+int main() {
+double compoundInterest(double p, double r, int n) 
+    cout << "Prime check: " << isPrime(7) << endl;
+    secondLargest();
+    countNumbers();
+    cout << "Sum power series: " << sumPowerSeries(2, 4) << endl;
+    cout << "Sum modified series: " << sumModifiedSeries(2, 4) << endl;
+    cout << "Sum fraction series: " << sumFractionSeries() << endl;
+    printSequence1();
+    printSequence2();
+    printSequence3();
+    cout << "Sum factorial series: " << sumFactorialSeries() << endl;
+    cout << "Sum arithmetic series: " << sumArithmeticSeries() << endl;
+    cout << "Sum exponential series: " << sumExponentialSeries(2, 4) << endl;
+    cout << "Sum alternating series: " << sumAlternatingSeries(2, 4) << endl;
+    findFactors(28);
+    sumSpecifiedValues();
+    cout << "Compound Interest: " << compoundInterest(1000, 0.05, 10) << endl;
+    return 0;
+}
+31. Sum of first n odd integers
+#include <iostream>
+using namespace std;
+Int main() {
+    int sum = 0;
+    for (int i = 1, count = 0; count < n; i += 2, count++) {
+        sum += i;
+    }
+    return 0;
+}
+32. Multiples of a given number between two numbers
+#include <iostream>
+using namespace std;
+Int main(){
+    for (int i = start; i <= end; i++) {
+        if (i % num == 0) {
+            cout << i << " ";
+        }
+    }
+    cout << endl;
+}return 0;}
+ 33. Count digits in a number
+#include <iostream>
+using namespace std;
+Int main(){    int count = 0;
+    while (num > 0) {
+        count++;
+        num /= 10;
+    }
+    return count;
+}
+ 34. Find GCD of three numbers
+#include <iostream>
+using namespace std;
+Int main(){
+    while (b != 0) {
+        int temp = b;
+        b = a % b;
+        a = temp;
+    }
+    return a;
+}
+ 35. Check if a number is odd/even and prime
+
+#include <iostream>
+using namespace std;
+void checkNumbers() {
+    int num, totalOdd = 0, totalEven = 0, totalPrime = 0;
+    while (true) {
+        cout << "Enter a number (-1 to stop): ";
+        cin >> num;
+        if (num == -1) break;
+
+        if (num % 2 == 0) totalEven++;
+        else totalOdd++;
+
+        if (isPrime(num)) totalPrime++;
+    }
+    cout << "Total Odd: " << totalOdd << "\nTotal Even: " << totalEven << "\nTotal Prime: " << totalPrime << endl;
+}
+    }
+    cout << "Total Odd: " << totalOdd << "\nTotal Even: " << totalEven << "\nTotal Prime: " << totalPrime << endl;
+}return 0;}
+36. Sum of every third integer up to 100
+#include <iostream>
+using namespace std;
+Int main() {
+    int sum = 0;
+    for (int i = 2; i < 100; i += 3) {
+        sum += i;
+    }
+    return sum;
+}
+ 37. Sum of factorial series
+#include <iostream>
+using namespace std;
+Int main(){
+    int fact = 1;
+    for (int i = 1; i <= n; i++) {
+        fact *= i;
+double sumFactorialSeries(int terms) {
+    double sum = 0;
+    for (int i = 1; i <= terms; i++) {
+        sum += (double)i / factorial(i + 1);
+    }
+    return sum;
+}
+ 38. Sum of given series
+#include <iostream>
+using namespace std;
+Int main() {
+    double sum = 0;
+    for (int i = 1; i <= terms; i++) {
+        sum += (double)i / (2 * i + 1);
+    }
+    return sum;
+}
+ 39. Generate all possible combinations of 1, 2, 3, and 4
+#include <iostream>
+using namespace std;
+Int main(){
+    for (int i = 1; i <= 4; i++) {
+        for (int j = 1; j <= 4; j++) {
+            for (int k = 1; k <= 4; k++) {
+                cout << i << j << k << " ";
+            }
+        }
+    }
+    cout << endl;
+}
+
+ 40. Prime numbers ending with 7 in descending order
+Int main()) {
+    for (int i = end; i >= start; i--) {
+        if (i % 10 == 7 && isPrime(i)) {
+            cout << i << " ";
+        }
+    }
+    cout << endl;
+}return 0;}
+
+ 41. Prime palindromes between 100 and 500
+#include <iostream>
+using namespace std;
+Int main(){
+    int rev = 0, temp = num;
+    while (temp > 0) {
+        rev = rev * 10 + temp % 10;
+        temp /= 10;
+    }
+    return rev == num;
+}
+void primePalindromes() {
+    for (int i = 100; i <= 500; i++) {
+        if (isPrime(i) && isPalindrome(i)) {
+            cout << i << " ";
+        }
+    }
+    cout << endl;
+}return 0;}
+ 42. LCM of three numbers
+#include <iostream>
+using namespace std;
+int lcm(int a, int b) {
+    return (a * b) / gcd(a, b);
+}
+int lcmThree(int a, int b, int c) {
+    return lcm(lcm(a, b), c);
+}
+43. Written the sum of number
+#include <iostream>
+using namespace std;
+int main() {
+    cout << "Sum of first 5 odd numbers: " << sumOdd(5) << endl;
+    printMultiples(3, 10, 30);
+    cout << "Digits in 12345: " << countDigits(12345) << endl;
+    cout << "GCD of 18, 24, and 30: " << gcdThree(18, 24, 30) << endl;
+    checkNumbers();
+    cout << "Sum of every third number < 100: " << sumEveryThird() << endl;
+    cout << "Factorial series sum: " << sumFactorialSeries(9) << endl;
+    cout << "Series sum: " << sumSeries(10) << endl;
+    generateCombinations();
+    primesEndingWith7(10, 100);
+    primePalindromes();
+    cout << "LCM of 12, 15, 20: " << lcmThree(12, 15, 20) << endl;
+    return 0;
+}
+int main() {
+    cout << "Sum of first 5 odd numbers: " << sumOdd(5) << endl;
+    printMultiples(3, 10, 30);
+    cout << "Digits in 12345: " << countDigits(12345) << endl;
+    cout << "GCD of 18, 24, and 30: " << gcdThree(18, 24, 30) << endl;
+    checkNumbers();
+    cout << "Sum of every third number < 100: " << sumEveryThird() << endl;
+    cout << "Factorial series sum: " << sumFactorialSeries(9) << endl;
+    cout << "Series sum: " << sumSeries(10) << endl;
+    generateCombinations();
+    primesEndingWith7(10, 100);
+    primePalindromes();
+    cout << "LCM of 12, 15, 20: " << lcmThree(12, 15, 20) << endl;
+    return 0;
+}
+#include <iostream>
+using namespace std;
+
+int main() {
+    int i, j;
+
+    // Q48: Hollow Square
+    int size = 5;
+    for (i = 0; i < size; i++) {
+        for (j = 0; j < size; j++)
+            cout << ((i == 0 || i == size - 1 || j == 0 || j == size - 1) ? "* " : "  ");
+        cout << endl;
+    }
+    cout << "\n";
+    // Q49: Right-Angled Triangle
+    for (i = 1; i <= 5; i++) {
+        for (j = 1; j <= i; j++) cout << j << " ";
+        cout << endl;
+    }    
+    cout << "\n";
+    // Q50: Inverted Number Triangle
+    for (i = 5; i >= 1; i--) {
+        for (j = 1; j <= i; j++) cout << j << " ";
+        cout << endl;
+    }
+    cout << "\n";
+return 0;
+}
+    // Q51: Right-Angled Triangle (Reverse Row-wise)
+#include <iostream>
+using namespace std;
+int main() {
+    int i, j, n;
+    // Q55: Solid Square of Hashes
+    #include <iostream>
+using namespace std;
+for (i = 0; i < 7; i++) {
+        for (j = 0; j < 7; j++) cout << "# ";
+        cout << endl;
+    }   
+    cout << "\n";
+return 0;
+}
+    // Q56: Right-Aligned Decreasing 'B' Pattern
+  #include <iostream>
+using namespace std;
+int main()
+  for (i = 10; i >= 1; i -= 2) {
+        for (j = 0; j < (10 - i) / 2; j++) cout << ". ";
+        for (j = 0; j < i; j++) cout << "B";
+        cout << endl;
+    }
+    cout << "\n";
+return 0;}
+    // Q57: Reverse Triangle of '&'
+    #include <iostream>
+using namespace std;
+int main()
+  cout << "Enter height: ";
+    cin >> n;
+    for (i = n; i >= 1; i--) {
+        for (j = 0; j < n - i; j++) cout << "  ";
+        for (j = 0; j < (2 * i - 1); j++) cout << "& ";
+        cout << endl;
+    }
+    cout << "\n";
+return 0;
+}
+    // Q58: Diamond of Asterisks
+    #include <iostream>
+using namespace std;
+int main()
+  for (i = 1; i <= 5; i++) {
+        for (j = 5; j > i; j--) cout << " ";
+        for (j = 0; j < (2 * i - 1); j++) cout << "*";
+        cout << endl;
+    }
+    for (i = 4; i >= 1; i--) {
+        for (j = 5; j > i; j--) cout << " ";
+        for (j = 0; j < (2 * i - 1); j++) cout << "*";
+        cout << endl;
+    }
+    cout << "\n";
+return 0:}
+    // Q59: Pyramid of Digits
+   #include <iostream>
+using namespace std;
+int main()
+   for (i = 1; i <= 10; i++) {
+        for (j = i; j < 10; j++) cout << " ";
+        for (j = i; j <= 2 * i - 1; j++) cout << j % 10;
+        for (j = 2 * i - 2; j >= i; j--) cout << j % 10;
+        cout << endl;
+    }
+    return 0;
+}
+Q.60: Triangle of Alphabets
+#include <iostream>
+using namespace std;
+int main() {
+    int i, j, n, num = 1;
+    cout << "Enter height: ";
+    cin >> n;
+    for (i = 0; i < n; i++) {
+        for (j = 0; j <= i; j++) cout << char('A' + j) << " ";
+        cout << endl;
+    } 
+    cout << "\n";
+        for (j = i - 1; j >= 1; j--) cout << j << " ";
+        cout << endl;
+return 0;
+    }
+     Q61: Triangle of Odd Numbers (Using While Loop)
+#include <iostream>
+using namespace std;
+int main() {
+  int  i = 1;
+    while (i <= 7) {
+        j = 0;
+        while (j < i) cout << num << " ", num += 2, j++;
+        cout << endl;
+        i += 2;
+    }
+    cout << "\n";return 0;}
+     Q62: Number Pyramid Pattern
+ #include <iostream>
+using namespace std;
+int main() {
+   for (i = 7; i >= 1; i--) {
+        for (j = 1; j <= i; j++) cout << j << " ";
+        for (j = i - 1; j >= 1; j--) cout << j << " ";
+        cout << endl;
+    }
+
+    cout << "\n";return 0;}
+    // Q63: Hollow Triangle of '&'
+ #include <iostream>
+using namespace std;
+int main() {
+   for (i = 1; i <= 7; i++) {
+        for (j = 1; j <= i; j++) 
+            cout << (j == 1 || j == i || i == 7 ? "& " : "  ");
+        cout << endl;
+    }
+    cout << "\n";return 0;}
+     Q64: Triangle of Digits (Starting from 0)
+  #include <iostream>
+using namespace std;
+int main() {
+  for (i = 0; i <= 5; i++) {
+        for (j = 0; j <= i; j++) cout << j;
+        cout << endl;
+    }
+
+    cout << "\n";return0;}
+     Q65: Checkerboard Pattern
+#include <iostream>
+using namespace std;
+int main() {
+    for (i = 0; i < 8; i++) {
+        for (j = 0; j < 8; j++) cout << ((i + j) % 2 == 0 ? ". " : "  ");
+        cout << endl;
+    }
+    return 0;
+}
+Q66:
+#include <iostream>
+using namespace std;
+
+int main() {
+    int i, j, n;
+
+     Q66: Rotating Alphabet Pattern
+    cout << "Enter number of rows: ";
+    cin >> n;
+    for (i = 0; i < n; i++) {
+        for (j = 0; j < 6; j++)
+            cout << char('A' + (i + j) % 6);
+        cout << endl;
+    }
+
+    cout << "\n";
+
+    Q67: Diamond Number Pattern
+    cout << "Enter number of rows: ";
+    cin >> n;
+    for (i = 1; i <= n; i++) {
+        for (j = 1; j <= i; j++) cout << j << " ";
+        cout << j - 1 << endl;
+    }
+    for (i = n - 1; i >= 1; i--) {
+        for (j = 1; j <= i; j++) cout << j << " ";
+        cout << j - 1 << endl;
+    }
+
+    cout << "\n";
+ return 0;
+    }
+    cout << "Enter number: ";
+    cin >> n;
+    for (i = n; i >= 1; i--) {
+        for (j = 1; j <= 2; j++) cout << i << " ";
+        cout << endl;
+    }
+
+    cout << "\n";
+
+    // Q70: Multiplication Pattern
+    cout << "Enter number of rows: ";
+    cin >> n;
+    for (i = n; i >= 1; i--) {
+        for (j = 1; j <= i; j++) cout << j << (j < i ? "*" : "");
+        cout << endl;
+    }
+
+    cout << "\n";
+
+    Q71: Pyramid of Odd Numbers
+ #include <iostream>
+using namespace std;
+int main() {
+   int arr[] = {1, 3, 5, 7};
+    for (i = 4; i > 0; i--) {
+        for (j = 0; j < i; j++) cout << arr[j] << " ";
+        cout << endl;
+    }
+    for (i = 2; i <= 4; i++) {
+        for (j = 0; j < i; j++) cout << arr[j] << " ";
+        cout << endl;
+    }
+
+    cout << "\n";return 0;}
+     Q72: Power Sequence Pattern
+    int power[] = {1, 4, 9, 16, 25, 36, 49, 64};
+    for (i = 0; i < 4; i++) {
+        for (j = 0; j <= i; j++) cout << power[j] << " ";
+        cout << endl;
+    }
+    return 0;
+}
+
+
+THE END
+

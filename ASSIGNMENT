@@ -1,0 +1,792 @@
+Assignment
+Program no 1
+print the following shape
+* * * * *
+*          *
+*          *
+*          *
+* * * * *
+#include <iostream>
+using namespace std;
+int main() {
+int rows = 5;
+int cols = 5;
+for (int i = 0; i < rows; ++i) {
+for (int j = 0; j < cols; ++j) {
+if (i == 0 || i == rows - 1) {
+cout << "* ";                
+} else {
+if (j == 0 || j == cols - 1) {
+cout << "* ";
+} else {
+cout << "  ";
+}
+}
+}
+cout << endl;
+}
+return 0
+program no 2
+    1
+   12
+  123
+ 1234
+12345
+#include <iostream>
+using namespace std;
+int main() {
+int rows = 5;
+for (int i = 1; i <= rows; ++i) {
+for (int j = rows; j > i; --j) {
+cout << "  ";
+}
+for (int k = 1; k <= i; ++k) {
+cout << k << " ";
+}
+cout << endl;
+}
+Return 0;
+Program no 3
+Print the shape 
+12345
+1234
+123
+12
+1
+#include <iostream>
+using namespace std;
+int main() {
+int rows = 5;
+for (int i = rows; i >= 1; --i) {
+for (int j = 1; j <= i; ++j) {
+cout << j;
+}
+cout << endl;
+}
+return 0;
+program no 4
+12345
+2345
+345
+45
+5
+#include <iostream>
+using namespace std;
+int main() {
+int rows = 5;
+for (int i = 0; i < rows; ++i) {
+for (int j = i + 1; j <= rows; ++j) {
+cout << j;
+}
+cout << endl;
+}
+return 0;
+}
+Program no 5
+Print following shape 
+1
+12
+123
+1234
+12345
+#include <iostream>
+using namespace std;
+int main() {
+int rows = 5;
+for (int i = 1; i <= rows; ++i) {
+for (int j = 1; j <= i; ++j) {
+cout << j;
+}
+cout << endl;
+}
+return 0;
+
+
+
+program no 6
+print the following shape
+1  2  3   4   5
+2  4  6   8   10
+3  6  9   12  15 
+4  8  12  16  20 
+5  10 15  20  25
+#include <iostream>
+
+using namespace std;
+int main() {
+int size = 5;
+for (int i = 1; i <= size; ++i) {
+for (int j = 1; j <= size; ++j) {
+cout << i * j << "\t";
+}cout << endl;
+}
+return 0;
+program no 7
+print the following shape
+1234
+2246
+3246
+4246
+#include <iostream>
+using namespace std;
+int main() {
+int size = 4;
+for (int i = 1; i <= size; ++i) {
+for (int j = 1; j <= size; ++j) {
+if (i == j) {
+cout << i;
+} else {
+cout << i * 2;
+}}
+cout << endl;
+}
+return 0;
+}
+Program no 8
+Print the following shape
+#####*#####
+####*#*####
+###*###*###
+##*#####*##
+#*#######*#
+*#########*
+#include <iostream>
+using namespace std;
+int main() {
+int size = 6;
+for (int i = 0; i < size; ++i) {
+for (int j = 0; j < size * 2 + 1; ++j) {
+if (j == size - i || j == size + i) {
+cout << '*';
+} else {
+cout << '#';
+}}
+cout << endl;
+}
+return 0;
+}
+Program no 9
+Print the shape 
+BBBBBBBBB
+.BBBBBBB 
+..BBBBB 
+...BBB 
+.....B
+#include <iostream>
+using namespace std;
+int main() {
+int rows = 5;
+for (int i = 0; i < rows; ++i) {
+for (int j = 0; j < i; ++j) {
+cout << '.';
+}
+for (int k = 0; k < (2 * rows - 1 - 2 * i); ++k) {
+cout << 'B';
+}
+cout << endl;
+}
+return 0;
+}
+Program no 10
+&&&&&&&&&
+ &&&&&&&
+  &&&&&
+   &&&
+    &
+#include <iostream>
+using namespace std;
+int main() {
+int rows = 5;
+for (int i = 0; i < rows; ++i) {
+for (int j = 0; j < i; ++j) {
+cout << ' ';
+}
+for (int k = 0; k < (2 * rows - 1 - 2 * i); ++k) {
+cout << 'B';
+}
+cout << endl;
+}
+return 0;
+}
+
+
+
+
+
+
+Program no 11
+Print the shape 
+    *
+   ***
+  *****
+ *******
+*********
+ *******
+  *****
+   ***
+    *
+#include <iostream>
+using namespace std;
+int main() {
+int rows = 5;
+// upper half 
+for (int i = 1; i <= rows; ++i) {
+// spaces
+for (int j = i; j < rows; ++j) {
+cout << ' ';
+}
+// Print * 
+for (int k = 1; k <= (2 * i - 1); ++k) {
+cout << '*';
+}
+cout << endl;
+}
+// lower half 
+for (int i = rows - 1; i >= 1; --i) {
+// Print spaces
+for (int j = rows; j > i; --j) {
+cout << ' ';
+}
+// Print *
+for (int k = 1; k <= (2 * i - 1); ++k) {
+cout << '*';
+}
+cout << endl;
+}
+Return 0;
+}
+Program no 12
+Print following shape
+         1
+        232
+       34543
+      4567654
+     567898765
+    67890109876
+   7890123210987
+  890123454321098
+ 90123456765432109
+0123456789876543210
+
+
+
+
+#include <iostream>
+using namespace std;
+int main() {
+int rows = 10;
+for (int i = 0; i < rows; ++i) {
+// Print leading spaces
+for (int j = rows - 1; j > i; --j) {
+cout << ' ';
+}
+for (int k = 0; k <= i; ++k) {
+cout << (i + k) % 10;
+}
+for (int l = i - 1; l >= 0; --l) {
+cout << (i + l) % 10;
+}
+cout << endl;
+}
+return 0;
+}
+Program no 13
+Print the shape
+A
+AB
+ABC 
+ABCD
+ABCDE
+#include <iostream>
+using namespace std;
+int main() {
+int rows = 5;
+for (int i = 0; i < rows; ++i) {
+for (char j = 'A'; j <= 'A' + i; ++j) {
+cout << j;
+}
+cout << endl;
+}
+return 0;
+program no 14
+print the shape 
+1
+3  5
+7  9  11
+13 15 17 19
+21 23 25 27 29
+31 33 35 37 39 41
+43 45 47 49 51 53 55
+#include <iostream>
+using namespace std;
+int main() {
+int currentNumber = 1;  // Start with 1
+int rows = 7;  // Number of rows in the pattern
+for (int i = 1; i <= rows; ++i) {
+for (int j = 1; j <= i; ++j) {
+cout << currentNumber << " ";
+currentNumber += 2;  // Increment by 2 for the next odd number
+}
+cout << endl;
+    }
+
+    return 0;
+program no 15
+print the shape
+1234567654321
+123456 654321
+12345   54321 
+1234     4321
+123       321
+12         21
+1           1
+#include <iostream>
+using namespace std;
+int main() {
+int rows = 7;
+for (int i = 0; i < rows; ++i) {
+for (int j = 1; j <= rows - i; ++j) {
+cout << j;
+}
+for (int k = 0; k < 2 * i - 1; ++k) {
+cout << ' ';
+}
+if (i != 0) {
+for (int l = rows - i; l >= 1; --l) {
+cout << l;
+}
+} else {
+for (int l = rows - i - 1; l >= 1; --l) {
+cout << l;
+}}
+cout << endl;
+}
+return 0;
+program no 16
+print the shape
+         &
+        & &
+       &   &
+      &     &
+     &       &
+    &         &
+   &           &
+  &             &
+ &               &  
+&&&&&&&&&&&&&&&&&&&
+#include <iostream>
+using namespace std;
+int main() {
+int rows = 10;
+    
+// Loop for the upper half
+for (int i = 1; i < rows; ++i) {
+// Print leading spaces
+for (int j = rows - i; j > 0; --j) {
+cout << ' ';
+}
+// Print '&' characters with spaces
+cout << '&';
+for (int k = 1; k < 2 * (i - 1); ++k) {
+cout << ' ';
+}
+if (i > 1) {
+cout << '&';
+}
+cout << endl;
+}
+// Print the last row
+for (int i = 0; i < 2 * rows - 1; ++i) {
+cout << '&';
+}
+cout << endl;
+return 0;
+program no 17
+Print the following shape
+0
+01
+012
+0123
+01234
+012345
+#include <iostream>
+using namespace std;
+int main() {int rows = 6;
+for (int i = 0; i < rows; ++i) {
+cout << j;
+}
+cout << endl;
+}
+return 0;
+}
+Program no 18 
+Print the following shape
+_____________
+|  --------- |
+| --------   |
+|  --------- |
+| ---------  |
+¬|____________|
+
+#include <iostream>
+using namespace std;
+int main() {
+    int height = 6;
+    int width = 14;
+// Top 
+    for (int i = 0; i < width; ++i) {
+    cout << '_';
+    }
+    cout << endl;
+// Upper 
+    cout << '|';
+    cout << "  --------- ";  // Specific alignment
+    cout << '|' << endl;
+
+    cout << '|';
+    cout << " --------   ";  // Specific alignment
+    cout << '|' << endl;
+    cout << '|';
+    cout << "  --------- ";  // Specific alignment
+    cout << '|' << endl;
+    cout << '|';
+    cout << " ---------  ";  // Specific alignment
+    cout << '|' << endl;
+// Bottom
+    cout << '|';
+    for (int i = 1; i < width - 1; ++i) {
+        cout << '_';
+    }
+    cout << '|' << endl;
+    return 0;
+    }
+Program no 19
+Print the following shape
+ABCDEF
+BCDEFA
+CDEFAB
+DEFABC
+EFABCD
+FABCDE
+#include <iostream>
+using namespace std;
+int main() {
+    int rows = 6;
+    int cols = 6;
+for (int i = 0; i < rows; ++i) {
+    for (int j = 0; j < cols; ++j) {
+    cout << char('A' + (i + j) % cols);
+    }
+    cout << endl;
+    }
+    return 0;
+    }
+Program no 20
+Print the following shape
+1   1
+ 2 2
+  3
+ 2 2
+1   1
+#include <iostream>
+using namespace std;
+int main() {
+    int rows;
+    cout << "Enter the number of rows: ";
+    cin >> rows;
+// Upper
+    for (int i = 1; i < rows; ++i) {
+        for (int j = 1; j < i; ++j) {
+            cout << " ";
+        }
+        cout << i;
+        for (int j = 1; j < 2 * (rows - i); ++j) {
+            cout << " ";
+        }
+        cout << i << endl;
+    }
+
+    // Middle 
+    for (int i = 1; i < rows; ++i) {
+        cout << " ";
+    }
+    cout << rows << endl;
+
+    // Lower 
+    for (int i = rows - 1; i >= 1; --i) {
+        for (int j = 1; j < i; ++j) {
+            cout << " ";
+        }
+        cout << i;
+        for (int j = 1; j < 2 * (rows - i); ++j) {
+            cout << " ";
+        }
+        cout << i << endl;
+    }
+
+    return 0;
+}
+Program no 21
+Print the following shape
+***1***
+**121**
+*12321*
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int rows = 3;
+
+    for (int i = 1; i <= rows; ++i) {
+        // Print leading stars
+        for (int j = rows; j > i; --j) {
+            cout << '*';
+        }
+        // ascending 
+        for (int k = 1; k <= i; ++k) {
+            cout << k;
+        }
+        // descending numbers
+        for (int l = i - 1; l >= 1; --l) {
+            cout << l;
+        }
+        // Print trailing stars
+        for (int m = rows; m > i; --m) {
+            cout << '*';
+        }
+        cout << endl;
+        }
+
+        return 0;
+        }
+
+Program no 22
+Print the following shape
+    5      
+   4 4     
+  3   3    
+ 2     2   
+1       1  
+#include <iostream>
+using namespace std;
+int main() {
+    int rows = 5;
+for (int i = 0; i < rows; ++i) {
+        for (int j = rows - i; j > 0; --j) {
+            cout << ' ';
+            }
+        cout << rows - i;
+        if (i > 0) {
+            for (int j = 1; j < 2 * i; ++j) {
+            cout << ' ';
+            }
+            cout << rows - i;
+            }
+        cout << endl;
+            }
+
+    return 0;
+            }
+Program no 23
+1357
+135 
+13  
+1    
+13   
+135  
+1357  
+#include <iostream>
+using namespace std;
+int main() {
+    int rows = 7;
+    int max_numbers = 4;
+	for (int i = 0; i < rows; ++i) {
+        int limit = (i < 4) ? (max_numbers - i) : (i - 2);
+        for (int j = 0; j < limit; ++j) {
+        cout << (1 + 2 * j);
+        }
+        cout << endl;
+        }
+        return 0;
+        }
+
+
+
+
+	
+Program no 24
+Print the following shape
+1  4  16  36  64
+1  9  25  49    
+1  4  16        
+1  9              
+1                 
+#include <iostream>
+#include <iomanip>
+using namespace std;
+int main() {
+    int rows = 5;
+   
+ int num = 1;
+ for (int i = 0; i < rows; ++i) {
+        for (int j = 0; j < rows - i; ++j) {
+            cout << setw(4) << num * num;
+            num += 1 + (num % 2);  // Ensure num is alternately odd and even
+           }
+            cout << endl;
+           }
+          return 0;
+           }
+Program no 25
+A C E G
+A C E
+A C
+A
+#include <iostream>
+using namespace std;
+int main() {
+    int rows = 4;
+    char startChar = 'A';
+for (int i = 0; i < rows; ++i) {
+        char currentChar = startChar;
+        for (int j = 0; j < rows - i; ++j) {
+            cout << currentChar << ' ';
+            currentChar += 2;  
+            }
+            cout << endl;
+            }    
+            return 0;
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+PROGRAM NO 26
+Print the following shape
+*
+*1*
+*121*
+*12321*
+*1234321*
+*123454321*
+*1234321*
+*12321*
+*121*
+*1*
+*
+#include <iostream>
+using namespace std;
+int main() {
+    int rows = 6;
+ // upper half 
+    for (int i = 1; i <= rows; ++i) {
+        cout << '*';
+        for (int j = 1; j <= i; ++j) {
+        cout << j;
+        }
+        for (int j = i - 1; j >= 1; --j) {
+        cout << j;
+        }
+        cout << '*' << endl;
+        }
+ // lower hal
+    for (int i = rows - 1; i >= 1; --i) {
+        cout << '*';
+        for (int j = 1; j <= i; ++j) {
+        cout << j;
+        }
+        for (int j = i - 1; j >= 1; --j) {
+        cout << j;
+        }
+        cout << '*' << endl;
+        }
+        cout << '*' << endl;
+        return 0;
+        }
+Program no 27
+Print the following shape
+*****
+ *  *
+  * *
+   **
+    *
+#include <iostream>
+using namespace std;
+int main() {
+    int rows = 5;
+for (int i = 0; i < rows; ++i) {
+        for (int j = 0; j < i; ++j) {
+        cout << ' ';
+        }
+        for (int k = 0; k < (rows - i); ++k) {
+        if (i == 0 || k == 0 || k == rows - i - 1) {
+        cout << '*';
+        } else {
+        cout << ' ';
+        }
+        }
+        cout << endl;
+        }
+
+       return 0;
+         }  
+
+
+Program no 28
+Print the following shape
+
+* 
+**
+* *
+*  *
+*****
+#include <iostream>
+using namespace std;
+int main() {
+    int rows = 5;
+for (int i = 0; i < rows; ++i) {
+        for (int j = 0; j <= i; ++j) {
+            if (i == rows - 1 || j == 0 || j == i) {
+             cout << '*';
+            } else {
+             cout << ' ';
+            }  }
+             cout << endl;
+            }
+
+            return 0;
+            }
+Program no 29
+Print the following shape
+    *****   
+   *   *   
+  *   *      
+ *   *    
+*****   
+#include <iostream>
+using namespace std;
+int main() {
+    int rows = 5;
+    int cols = 5;
+for (int i = 0; i < rows; ++i) {
+        for (int j = 0; j < cols; ++j) {
+        if (i == 0 || i == rows - 1 || j == cols - i - 1 || j == cols - 1) {
+                cout << '*';
+            } else {
+                cout << ' ';
+            }
+            }
+                cout << endl;
+            }  
+               return 0;
+            }
+       

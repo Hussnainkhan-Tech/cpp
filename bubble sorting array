@@ -1,0 +1,55 @@
+
+
+//bubble sorting
+#include<iostream>
+using namespace std;
+int main(){
+int i,temp,arr[5];
+for(i=0; i<5; i++){
+cout<<"Enter the number in array ";
+cin>>arr[i];
+}
+cout<<endl<<endl;
+cout<<"Values in Array \t ";
+for(i=0; i<5; i++){
+cout<<arr[i]<<"\t";
+}
+for(i=0; i<5; i++)
+for(int j=0; j<4-i; j++)
+if(arr[j]>arr[j+1]){  
+temp=arr[j];
+arr[j]=arr[j+1];
+arr[j+1]=temp;
+}
+cout<<endl;
+cout<<endl<<endl;
+cout<<"After Sorting this Values ";
+for(i=0; i<5; i++){
+
+//bubble sorting
+#include <iostream>
+#include <algorithm>
+using namespace std;
+int main(){
+int i,arr[5];
+for(i=0; i<5; i++){
+cout<<"Enter the number you want to safe in array ";
+cin>>arr[i];
+}
+cout<<"Values in Array ";
+for(i=0; i<5; i++){
+	cout<<arr[i]<<"\t";
+}
+cout<<endl;
+sort(arr, arr+5);
+cout<<endl<<endl;
+for(i=0; i<5; i++)
+cout<<arr[i]<<" ";
+return 0;	
+}
+
+cout<<" "<<arr[i]<<" ";
+}
+cout<<endl<<endl;
+return 0;	
+}

@@ -1,0 +1,204 @@
+
+  //For safe Numbers in Array ::
+#include<iostream>
+using namespace std;
+int main(){
+	int i,arr[5];
+	for( i=1; i<=5; i++){
+		cout<<"Enter the number = "; 
+		cin>>arr[i];
+		
+	}
+	for(i=1; i<=5; i++){
+		cout<<arr[i]<<endl;
+	}
+	return 0;
+}
+//For reverse order to print the safe value in Array 
+#include<iostream>
+using namespace std;
+int main(){
+	int i,arr[5];
+	for( i=1; i<=5; i++){
+		cout<<"Enter the number = ";
+		cin>>arr[i];
+		
+	}
+	for(i=5; i>=1; i--){
+		cout<<arr[i]<<endl;
+	}
+	return 0;
+}
+//For Sum of the number ::
+#include<iostream>
+using namespace std;
+int main(){
+	int i,arr[5];
+	int sum=0;
+	for(i=1; i<=5; i++){
+		cout<<"Enter the number = ";
+		cin>>arr[i];
+		sum+=arr[i];
+	}
+	cout<<"The Sum of the Numbers is : "<<arr[i];
+	return 0;
+}
+//For Multiplication (product all the numbers )
+#include<iostream>
+using namespace std;
+int main(){
+	int i,arr[5];
+	int prod=1;
+	for(i=1; i<=5; i++){
+		cout<<"Enter the number = ";
+		cin>>arr[i];
+		prod*=arr[i];
+	}
+	cout<<"The Product of the Numbers is : "<<arr[i];
+	return 0;
+}
+//For to get the Average of the number ::
+#include<iostream>
+using namespace std;
+int main(){
+	int i,avg,arr[5];
+	int sum=0;
+	for(i=1; i<=5; i++){
+		cout<<"Enter the number = ";
+		cin>>arr[i];
+		sum+=arr[i];
+	}
+	avg=sum/5.0;
+	cout<<"The Product of the Numbers is : "<<avg;
+	return 0;
+}
+//For to chack the sum of even and odd numeber ::
+#include<iostream>
+using namespace std;
+int main(){
+	int i,a,arr['b'],sum=0,sum1=0,b;
+	cout<<"Enter starting and ending number you want to see the sum of even and odd "<<endl;
+	cout<<"Starting numeber  (For starting the number ::)";
+	cin>>a;
+	cout<<"Enter the Ending Number = ";
+	cin>>b;
+	cout<<endl;
+	for(i=a; i<=b; i++){
+		cout<<"Enter the number = ";
+		cin>>arr[i];
+	
+		if(arr[i]%2==0){
+				sum+=arr[i];
+		}
+		else
+		sum1+=arr[i];
+	}
+	cout<<"Sum of the Even Number is = "<<sum<<endl;
+		cout<<"Sum of the odd Number is = "<<sum1<<endl;
+return 0;
+}
+//for example you enter 5 numbers in array you want to cheack the number where the position you enter this number if you enter otherwise INVALID::
+#include<iostream>
+using namespace std;
+int main(){
+	int num,index=-1,arr[5];
+	cout<<"Enter five numbers = ";
+	for(int i=0; i<5; i++){
+		cin>>arr[i];
+	}
+	cout<<"Enter the number you want to chack : ";
+	cin>>num;
+	for(int i=0; i<5; i++ ){
+		if(arr[i]==num){
+			index=i+1;
+			break;
+		}
+	}
+	if(index!=-1){
+		cout<<"You enteres number   "<<num<<"  is  at position  "<<index;
+	}
+	else
+	cout<<"INVALID";
+return 0;
+}
+//If you want to chack the value in ARRAY by using sequential search ::
+#include<iostream>
+using namespace std;
+int main(){
+	int n,i,arr[10],loc=-1;
+	for(i=1; i<10; i++){
+		cout<<"Enter the number to safe in array  ";
+		cin>>arr[i];
+	}
+	cout<<"Enter the number you want to check in array ";
+	cin>>n;
+	for(i=1; i<10; i++){
+		if(arr[i]==n){
+			loc=i;
+			break;
+		}}
+		if(loc!=-1){
+			cout<<"The number you search is in index "<<loc;
+		}
+		else 
+		cout<<"Invalid";
+			return 0;}
+//If you want to chack the value in ARRAY by using Binary search ::
+#include<iostream>
+#include<algorithm>
+using namespace std;
+int main(){
+	int arr[10]={10,20,30,40,50,60,70,80,90,100};
+	int index,nv,start=0,end=9,loc=-1,mid,n,i;
+
+	cout<<"Enter the value you want to check ";
+	cin>>n;
+	while(start<=end){
+		mid=(start+end)/2;
+	if(arr[mid]==n){
+		loc=mid;
+		break;}
+		else if(n<arr[mid])
+		end=mid-1;
+		else 
+		start=mid+1;
+	}
+	if(loc!=-1)
+	cout<<"This Number is at Index "<<loc;
+	else 
+	cout<<":Invalid:";
+	
+return 0;}
+//If You want to ADD New value in ARRY you can use this 1 METHOD:::
+#include<iostream>
+#include<algorithm>
+using namespace std;
+int main(){
+	int arr[10]={10,20,30,40,50,60,70,80,90,100};
+	int index,nv,start=0,end=9,loc=-1,mid,n,i;
+	cout<<"Enter the index you want to change ";
+	cin>>index;
+	cout<<"Enter the new value ";
+	cin>>nv;  //nv=New Value 
+	arr[index]=nv;
+	sort(arr,arr+10);
+	cout<<"Enter the value you want to check ";
+	cin>>n;
+	while(start<=end){
+		mid=(start+end)/2;
+	if(arr[mid]==n){
+		loc=mid;
+		break;}
+		else if(n<arr[mid])
+		end=mid-1;
+		else 
+		start=mid+1;
+	}
+	if(loc!=-1)
+	cout<<"This Number is at Index "<<loc;
+	else 
+	cout<<":Invalid:";
+	
+return 0;}
+//If you want to again fix value or you want to addd value in Empty Array::
+  arr[2]=33; //you add value in this arry index and value then array update

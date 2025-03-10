@@ -202,3 +202,31 @@ int main(){
 return 0;}
 //If you want to again fix value or you want to addd value in Empty Array::
   arr[2]=33; //you add value in this arry index and value then array update
+//add or delete in array index
+#include<iostream>
+using namespace std;
+int main(){
+	int size,nv,n,i; 
+	cout<<"Enter the size of array ";
+	cin>>size;
+	int arr[size];
+	cout<<"Enter the "<<size<<"  elements you want to safe in array "<<endl;
+   for(i=0; i<size; i++){
+   	cin>>arr[i];
+   }
+   cout<<endl;
+	for( i=0; i<size; i++){
+		cout<<arr[i]<<"\n";
+	}
+	cout<<endl;
+	cout<<"Enter the index you want to delete ";
+	cin>>n;
+	cout<<"Enter the new value you want to store ";
+	cin>>nv;
+	arr[n]=nv;
+	cout<<"After changing the value : ";
+	for(i=0 ; i<size; i++)
+	cout<<arr[i]<<"\n";
+
+	return 0;
+}

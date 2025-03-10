@@ -1,0 +1,128 @@
+#include<iostream>
+#include<cmath>
+#include<algorithm>
+using namespace std;
+
+void ShowMenu(){
+    cout<<"Press 1 to find whether number is prime or not "<<endl;
+    cout<<"Press 2 to search a number in array "<<endl;
+    cout<<"Press 3 to sort Array "<<endl;
+    cout<<"Press 4 to delete a value from Array "<<endl;
+    cout<<"Press 5 to display the following shape "<<endl;
+    cout<<"Press 6 to display value that is divisible by 9 in Array "<<endl;
+    cout<<"Press 7 for exit "<<endl;
+}
+
+int main() {
+    int option, n;
+    ShowMenu();
+    int i, loc = -1, arr[10] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
+
+    cout << "Enter the number :: ";
+    cin >> option;
+
+    switch(option) {
+        case 1: {
+            cout << "Enter a number : ";
+            cin >> n;
+            if (n < 2)
+                cout << "Not a prime number ";
+            else {
+                bool isprime = true;
+                for (int i = 2; i <= sqrt(n); i++) {
+                    if (n % i == 0) {
+                        isprime = false;
+                        break;
+                    }
+                }
+                if (isprime)
+                    cout << "Number is prime ";
+                else 
+                    cout << "Not a prime ";
+            }
+            break;
+        }
+        case 2: {
+            cout << "Enter the number you want to see in which index :: ";
+            cin >> n;
+            for (i = 0; i < 10; i++) {
+                if (arr[i] == n) {
+                    loc = i;
+                    break;
+                }
+            }
+            if (loc != -1)
+                cout << "The number is at index " << loc;
+            else 
+                cout << "Not Found ";
+            break;
+        }
+        case 3: {
+            for (i = 0; i < 10; i++) {
+                cout << "Enter the number ";
+                cin >> arr[i];
+            }
+            cout << "After sorting ";
+            sort(arr, arr + 10);
+            for (i = 0; i < 10; i++) {
+                cout << arr[i] << endl;
+            }
+            break;
+        }
+        case 4: {
+            int size, nv;
+            cout << "Enter the size of array ";
+            cin >> size;
+            int arr[size];
+            cout << "Enter the " << size << " elements you want to save in array " << endl;
+            for (i = 0; i < size; i++) {
+                cin >> arr[i];
+            }
+            cout << endl;
+            for (i = 0; i < size; i++) {
+                cout << arr[i] << "\n";
+            }
+            cout << endl;
+            cout << "Enter the index you want to delete ";
+            cin >> n;
+            cout << "Enter the new value you want to store ";
+            cin >> nv;
+            arr[n] = nv;
+            cout << "After changing the value : ";
+            for (i = 0; i < size; i++)
+                cout << arr[i] << "\n";
+            break;
+        }
+        case 5: {
+            int rows = 4; 
+            for (int i = 1; i <= rows; ++i) {
+                for (int space = 0; space < rows - i; ++space) {
+                    cout << "  ";
+                }
+                for (int j = 2 * i - 1; j >= 1; j -= 2) {
+                    cout << j << " ";
+                }
+                cout << endl;
+            }
+            break;
+        }
+        case 6: {
+            cout << "Values divisible by 9 in the array: ";
+            for (i = 0; i < 10; i++) {
+                if (arr[i] % 9 == 0) {
+                    cout << arr[i] << " ";
+                }
+            }
+            cout << endl;
+            break;
+        }
+        case 7: {
+            cout << "Exiting the program. Goodbye!" << endl;
+            break;
+        }
+        default:
+            cout << "Invalid option selected." << endl;
+            break;
+    }
+    return 0;
+}

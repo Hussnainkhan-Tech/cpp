@@ -1,0 +1,303 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a;
+    cout<<"testing outout...";
+    cin>>a;
+    char ch='*';
+    cout<<"tesintg output"<<a<<ch;
+    return 0;
+
+}
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    float a,b;
+    cout<<"value of these number";
+    cin>>a>>b;
+    float d=a+b;
+    cout<<"floating sum="<<d;
+    return 0;
+}
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    float a,b;
+    cout<<"enter the length";
+    cin>>a;
+    cout<<"enter the width";
+    cin>>b;
+    float c=a*b;
+    cout<<"area od square ::"<<c;
+    return 0;
+}
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    cout<<"*"<<endl;
+    cout<<"* *"<<endl;
+    cout<<"* * *"<<endl;
+    cout<<"* * * *"<<endl;
+    return 0;
+}
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+char ch;
+cout<<"enter the charcter";
+cin>>ch;
+int n=ch;
+cout<<"ascii code ::"<<ch<<n;
+return 0;
+}
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+int div,rem,a,b;
+cout<<"enter the value";
+cin>>div;
+cout<<"enter the other value";
+cin>>rem;
+a=div/rem;
+ b=div%rem;
+cout<<"divisior"<<a<<endl<<"remender"<<b;
+return 0;
+}
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int b=25,c=4;
+    b=b+c;
+    c=b-c;
+    b=b-c;
+    cout<<b<<endl<<c;
+    return 0;
+}
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int d,s,t;
+    cout<<"enter the distance";
+    cin>>d;
+    cout<<"enter the speed";
+    cin>>s;
+    t=d/s;
+    cout<<"time ::"<<t;
+    return 0;
+}
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    float base,height;
+    cout<<"enter the base";
+    cin>>base;
+    cout<<"enter the height";
+    cin>>height;
+    float area=(base*height)/2;
+    cout<<"area of triangle ::"<<area;
+    return 0;
+}
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+int h,m,s;
+cout<<"enter the time in seconds";
+cin>>s;
+h=s/3600;
+s=s%3600;
+m=s/60;
+s=s%60;
+cout<<"HH-MM-SEC="<<h<<":"<<m<<":"<<s<<endl;
+return 0;
+}
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    float cel,far;
+    cout<<"enter the celcuis";
+    cin>>cel;
+    far=9.0/5.0*cel+32;
+    cout<<"farhenheit::"<<far;
+    return 0;
+}
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    float height;
+    cout<<"enter the height ";
+    cin>>height;
+    height=height*2.54;
+    cout<<"height is ::"<<height;
+    return 0;
+}
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    float a,c,r;
+    cout<<"entr the radius ::";
+    cin>>r;
+   float area=r*r*3.14;
+   float circum=2*r*3.14;
+    cout<<"area is ::"<<area<<endl;
+    cout<<"circum is ::"<<circum<<endl;
+    return 0;
+}
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int vf,vi,a,t;
+    cout<<"enter the initial velocity::"<<endl;
+    cin>>vi;
+    cout<<"acceleration"<<endl;
+    cin>>a;
+    cout<<"enter the time::"<<endl;
+    cin>>t;
+    vf=vi+a*t;
+    cout<<"the final velocity::"<<vf;
+    return 0;
+
+}
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n,a,b;
+    cout<<"enter the value";
+    cin>>n;
+    a=n/100;
+    n=n%100;
+    b=n/10;
+    n=n%10;
+    cout<<"the reverse order ::"<<n<<endl<<b<<endl<<a<<endl;
+    return 0;
+}
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+int e,o,result;
+cout<<"enter the even number";
+cin>>e;
+cout<<"enter the odd number";
+cin>>o;
+result=1000-((e*5)+(o*3));
+cout<<"result is ::"<<result;
+return 0;
+}
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+int hrs,d,w;
+cout<<"entr the hours";
+cin>>hrs;
+w=hrs/168;
+hrs=hrs%168;
+d=hrs/24;
+hrs=hrs/24;
+cout<<"weeks ::"<<w<<":"<<"days"<<d<<":"<<endl<<"hours"<<hrs;
+return 0;
+}
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    float e1,e2,g1,g2,p1,p2;
+    cout<<"old price of electricity::";
+    cin>>e1;
+    cout<<"old price of gas::";
+    cin>>g1;
+    cout<<"old price of petrol::";
+    cin>>p1;
+    e2=e1*2.2;
+    g2=g1*2.2;
+    p2=p1*2.2;
+    cout<<"New price of electricity::"<<e2<<endl;
+    cout<<"New price of gas::"<<g2<<endl;
+    cout<<"New price of petrol::"<<p2<<endl;
+    return 0;
+}
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    cout<<"C"<<endl;
+    cout<<"O M"<<endl;
+    cout<<"P U T"<<endl;
+    cout<<"E R I S"<<endl;
+    cout<<"A W O R L"<<endl;
+    cout<<"D O F S"<<endl;
+    cout<<"C I E"<<endl;
+    cout<<"N C"<<endl;
+    cout<<"E"<<endl;
+    return 0; 
+}
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+cout<<" ----------"<<endl;
+cout<<"----------"<<endl;
+cout<<" ----------"<<endl;
+cout<<"----------"<<endl;
+cout<<" ----------"<<endl;
+cout<<"----------"<<endl;
+cout<<" ----------"<<endl;
+return 0;
+}
+
+
+
+

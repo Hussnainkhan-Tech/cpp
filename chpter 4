@@ -298,6 +298,319 @@ cout<<" ----------"<<endl;
 return 0;
 }
 
+                EXCERCISE
 
+Program 1
+
+int n=10;
+float a=10.22;
+char ch='A';
+cout<<"The value of int is ::>  "<<n<<endl;
+cout<<"The value of float is ::>  "<<a<<endl;
+cout<<"The value of char  is ::>  "<<ch<<endl;
+cout<<"End Of program ::> ";
+
+
+PROGRAM 2
+    float radius,Area,circum;
+    cout<<"Enter the Radius :: ";
+    cin>>radius;
+    Area=4*M_PI*(radius*radius);
+   circum=4.0/3*M_PI*pow(radius,3);
+   cout<<"Area of the sphere is :: "<<Area<<endl;
+   cout<<"Circumference is :: "<<circum<<endl;
+
+
+Program 3
+
+int a,b,c;
+cout<<"Enter the value of A :: ";
+cin>>a;
+cout<<"Enter the value of B  :: ";
+cin>>b;
+cout<<"Enter the value of C :: ";
+cin>>c;
+float s=(a+b+c)/2.0;
+float Area=sqrt(s*(s-a)*(s-b)*(s-c));
+ cout<<"The Area of the triangle is :: "<<Area;
+
+Program 4
+
+
+float mile;
+cout<<"Enter the miles :: ";
+cin>>mile;
+float kilometer=mile*1.609;
+cout<<"Kilometer is == "<<kilometer; 
+
+
+Program 5
+
+
+int  age,m,d;
+cout<<"Enter your age in years :: ";
+cin>>age;
+m=age*12;
+d=age*365;
+cout<<"The months your age is ::> "<<m<<endl<<"The days your life is ==> "<<d;
+
+
+Program 6
+
+int n;
+cout<<"Enter the number :: ";
+cin>>n;
+cout<<"The square of the number is ::> "<<pow(n,2)<<endl;
+cout<<"The cube of the number is ::> "<<pow(n,3);
+
+
+Program 7
+
+int n,a,b,c;
+cout<<"Enter the total pages of the book :: ";
+cin>>n;
+cout<<"Enter the number of pages a person read in one day :: ";
+cin>>a;
+cout<<"Enter the number of day a persson read :: ";
+cin>>b;
+int l=b*a;
+c=n-l;
+cout<<"The pages a person read :: "<<l<<endl;
+cout<<"The number of pages remain::>"<<c;
+
+
+Program 8
+
+
+int petrol;
+cout<<"Enter the Petrol in Liter :: ";
+cin>>petrol;
+float travel=(float)petrol*5.3;
+cout<<endl;
+cout<<"A car can travel "<<travel<<" Miles in "<<petrol<<" Liters ";
+
+
+Program 9
+
+
+int student,fee_per_student;
+cout<<"Enter the total number of students in class  ";
+cin>>student;
+cout<<"Enter the fee of the  student ::   ";
+cin>>fee_per_student;
+int total_fee=student*fee_per_student;
+cout<<"Total fee collected from the student  ==> "<<total_fee<<endl;
+
+
+program 10
+
+
+float F,C;
+cout<<"Enter the Temperature in Farahan Height ::> ";
+cin>>F;
+C=5.0/9*(F-32);
+cout<<C<<endl;
+
+
+Program 11
+
+
+string n;
+cout<<"Enter the  digits ::> ";
+cin>>n;
+cout<<n[0]<<endl;
+cout<<n[1]<<endl;
+cout<<n[2]<<endl;
+cout<<n[3]<<endl;
+cout<<n[4]<<endl;
+
+
+Program 12
+
+
+cout<<"1\t2\t3\t4\t5"<<endl<<"6\t7\t8\t9\t10";
+
+
+program 13
+
+
+int lenght,width,height;
+cout<<"Enter the Lenght ::> ";
+cin>>lenght;
+cout<<"Enter the width of the cude ::> ";
+cin>>width;
+cout<<"Enter the Height of the cube ::> ";
+cin>>height;
+int v=lenght*width*height;
+
+cout<<"The Volume of the cube is ::> "<<v;
+
+
+Program 14
+
+
+    int x1, y1, x2, y2;
+    cout << "Enter the X coordinate of first point: ";
+    cin >> x1;
+    cout << "Enter the Y coordinate of first point: ";
+    cin >> y1;
+    cout << "Enter the X coordinate of second point: ";
+    cin >> x2;
+    cout << "Enter the Y coordinate of second point: ";
+    cin >> y2;
+    float distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+   cout << "Distance between two points: " << distance << endl;
+
+
+Program 15
+
+
+int a,b,c,temp;
+cout<<"Enter the number ::> ";
+cin>>a;
+cout<<"Enter the secound number ::> ";
+cin>>b;
+cout<<"Enter the third number ::>";
+cin>>c;
+temp=a;
+a=b;
+b=c;
+c=a;
+c=temp;
+cout<<a<<endl<<b<<endl<<c;
+
+
+Program 16
+
+
+float  radius,angle;
+cout<<"Enter the radius of the arc ::> ";
+cin>>radius;
+cout<<"Enter the Angle of the arc  ::> ";
+cin>>angle;
+float  lenght=radius*angle;
+cout<<lenght<<endl;
+
+
+Programm 17
+
+
+float pound;
+cout<<"Enter the pounds ::> ";
+cin>>pound;
+float kilogram=pound*0.453592;
+cout<<"The pound convert into kilogram ::>"<<kilogram;
+
+
+Program 18
+
+
+    float radius, theta, area;
+    cout << "Enter the radius of the circle: ";
+    cin >> radius;
+    cout << "Enter the angle in radians: ";
+    cin >> theta;
+    area = 0.5 * radius * radius * theta;
+    cout << "The area of the sector is: " << area << endl;
+
+
+Program 19 
+
+
+int n;
+cout<<"Enter the number :: ";
+cin>>n;
+cout<<log2(n);
+    Program 20     
+    char ch;
+    cout<<"Enter the character ::> ";
+    cin>>ch;
+    ch++;
+    cout<<ch<<endl;
+    ch++;
+    cout<<ch<<endl;
+
+
+Program 21
+
+int a,b,c,d,e;
+cout<<"Enter the Five Integer ::> ";
+cin>>a>>b>>c>>d>>e;
+int sum=a+b+c+d+e;
+cout<<"Sum of the integer is equal ::> "<<sum<<endl;
+
+Program 22
+
+int sallary;
+cout<<"Enter the sallary ::> ";
+cin>>sallary;
+int darness_allowance=sallary*0.25;
+int house_rent=sallary*0.25;
+int gross_sallry=sallary+(darness_allowance+house_rent);
+cout<<"Gross salary ::> "<<gross_sallry;
+
+Program 23
+
+int hh,mm,ss;
+cout<<"Enter the time in HH_MM_SS ";
+cin>>hh>>mm>>ss;
+int t=(mm*3600)+(mm*60)+ss;
+cout<<"Total Time in Secounds  ::> "<<t;
+
+
+Program 24
+
+
+int principal_amount,rate_intrest,time,compound_intrest;
+cout<<"Enter the principal amount ::> ";
+cin>>principal_amount;
+cout<<"Ente the intrest rate ::>";
+cin>>rate_intrest;
+cout<<"Enter the time ";
+cin>>time;
+compound_intrest=(principal_amount+rate_intrest+time)/100;
+cout<<"The principal amount ::> "<<principal_amount<<endl;
+cout<<"The intrest rate ::> "<<rate_intrest<<"%"<<endl;
+cout<<"The time is ::> "<<time<<" years" <<endl;
+cout<<"The compound intrest is ::> "<<compound_intrest;
+
+
+Program 25
+
+
+char ch;
+cout<<"Enter the letter :: ";
+cin>>ch;
+int n=ch;
+cout<<n;
+
+Program 26
+
+
+int m1,m2,m3,m4,m5;
+int marks_obt,total_marks,percantage;
+cout<<"Enter the obtained marks ::> ";
+cin>>m1>>m2>>m3>>m4>>m5;
+total_marks=500;
+percantage=m1+m2+m3+m4+m5*100/total_marks;
+cout<<"The total marks is Equal to "<<total_marks<<endl;
+cout<<"The percantage of the number is " <<percantage<<endl;
+
+
+Program 27
+
+
+int principal_amount,rate_intrest,time,compund_amount;
+cout<<"Enter the Principal Amount ::> ";
+cin>>principal_amount;
+cout<<"Enter the rate of intrest ::> ";
+cin>>rate_intrest;
+cout<<"Enter the time ::>";
+cin>>time;
+compund_amount=principal_amount*pow((1+rate_intrest/100),time )-principal_amount;
+cout<<"The principal amount is :: >> "<<principal_amount;
+
+return 0;
+ }
 
 

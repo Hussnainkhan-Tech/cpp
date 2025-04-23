@@ -1,0 +1,503 @@
+
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main(){
+ Program 1   
+    
+    int marks;
+    cout<<"Enter the marks ::";
+    cin>>marks;
+    if(marks>=40){
+        cout<<"Conguralation! You have Passed :: ";
+    }
+ 
+ Program 2
+ 
+ int a,b;
+ cout<<"Enter the first number :: ";
+ cin>>a;
+ cout<<"Enter the secound number :: ";
+ cin>>b;
+ if(a==b){
+    cout<<"Both are Equal ::> ";
+ }
+ 
+ 
+Program 3
+
+int a,b;
+cout<<"Enter the number :: ";
+cin>>a;
+cout<<"Enter the secound number ";
+cin>>b;
+if(a*a==b){
+    cout<<"Secound number is the square of first :: ";
+}
+ 
+
+Program 4
+
+int sub1,sub2,sub3;
+cout<<"Enter the Marks or first subject :: ";
+cin>>sub1;
+cout<<"Enter the Marks or Secound  subject :: ";
+cin>>sub2;
+cout<<"Enter the Marks or Third  subject :: ";
+cin>>sub3;
+float avg=(sub1+sub2+sub3)/3.0;
+if(avg>80){
+    cout<<"You are above Standard !"<<endl;
+    cout<<"Admission Granted ";
+}
+
+
+Program 5
+
+int n1,n2,n3;
+cout<<"Enter the three numbers ::";
+cin>>n1>>n2>>n3;
+int max=n1;
+if(n2>max)
+max=n2;
+if(n3>max)
+max=n3;
+cout<<"The maximum number is ::> "<<max;
+
+Program 6
+
+int n;
+cout<<"Enter a number :: ";
+cin>>n;
+if(n>0){
+    cout<<"The number is positive ";
+}
+if(n<0)
+cout<<"The number is Negative ";
+if(n==0)
+cout<<"The number is zero ";
+
+Program 7
+
+int n1,n2,n3,n4,n5;
+cout<<"Enter the Five Numbers ::> ";
+cin>>n1>>n2>>n3>>n4>>n5;
+int max=n1;
+int min=n1;
+if(n2>max)
+max=n2;
+if(n2<min)
+min=n2;
+if(n3>max)
+max=n3;
+if(n3<min)
+min=n3;
+if(n4>max)
+max=n4;
+if(n4<min)
+min=n4;
+if(n5>max)
+max=n5;
+if(n5<min)
+min=n5;
+cout<<"The Maximum value is ::> "<<max<<endl;
+cout<<"The minimum value is ::> "<<min;
+    
+
+Program 8
+
+int n;
+cout<<"Enter the number :: ";
+cin>>n;
+if(n%2==0){
+    cout<<n<<" is Even ";
+}
+else
+cout<<n<<" is odd ";
+
+Program 9
+
+int year;
+cout<<"Enter a year :: ";
+cin>>year;
+if(year%4==0){
+    cout<<year<<" is a leap year";
+}
+else
+cout<<year<<" is not a leap year :";
+
+Program 10 
+
+int salary,grade;
+cout<<"Enter your Salary ::> ";
+cin>>salary;
+cout<<"Enter the Grade ::> ";
+cin>>grade;
+if(grade>15){
+    cout<<"The total salary is ::>  "<<salary+salary*0.50;
+}
+if(grade<15)
+{
+cout<<"The totsl salary is ::>  "<<salary+salary*0.25;
+}
+
+
+program 11
+
+::>> agr a ka modulas b == 0 ho ga tab wo dusra number ka multiple ho ga warna nhi  
+
+int b,a;
+cout<<"Enter the number ::";
+cin>>a;
+cout<<"Enter the secound number :: ";
+cin>>b;
+if(a%b==0)
+cout<<"The first integer is the multiple of secound integer ::> ";
+else
+cout<<"The first integer is NOT the multiple of secound integer ::>>";
+
+
+Program 12
+
+int n;
+cout<<"Enter your test score ::> ";
+cin>>n;
+if(n>=90)
+cout<<"Your Grade is A";
+else if(n>=80 )
+cout<<"Your Grade is B";
+else if(n>=70 )
+cout<<"Your Grade is C";
+else if (n>=60 )
+cout<<"Your Grade is D";
+else 
+cout<<"Your Grade is F";
+
+
+Program 13
+
+int unit,b;
+cout<<"Enter uniits consumed :: ";
+cin>>unit;
+if(unit<=300) 
+b=unit*2+150;
+else if (unit>500)
+b=unit*7+150;
+else if(unit>300)
+b=unit*5+150;
+else if(b>2000){
+    b=b+b*0.05;
+}
+cout<<b;
+
+Program 14
+
+int radius,n;
+cout<<"Enter the radius ::> ";
+cin>>radius;
+cout<<"Enter 1 for Area and 2 for Circumference : ";
+cin>>n;
+if(n==1){
+    cout<<"Area = "<<radius*radius*M_PI;
+}
+else if(n==2){
+    cout<<"Circumference is = "<<radius*2.0*M_PI;
+}
+else
+cout<<"Invalid Choice ::> ";
+
+Program 15
+
+int salary;
+cout<<"Enter your Salary ::> ";
+cin>>salary;
+if(salary>=20000)
+cout<<"YOUR NET SALARY IS :::"<<salary+salary*0.07;
+else if(salary>=10000 )
+cout<<"Your Net salary is ::> "<<salary-1000;
+else
+cout<<"Your net sallary is "<<salary;
+
+Program 16
+
+int call,bill,a=200;
+cout<<"Enter the number of calls :: ";
+cin>>call;
+if(call<=100)
+bill=200;
+else if(call<=150)
+bill=a+(50*0.60);
+else if(call<=200)
+bill=a+(50*0.60)+(50*0.50);
+else
+bill=a+(50*0.60)+(50*0.50)+(call-200)*0.40;
+cout<<bill;
+
+ ::>> NESTED IF STATEMENT  <<::
+
+Program 17
+
+int a,b,c;
+cout<<"Enter the number :: ";
+cin>>a>>b>>c;
+if(a<b)
+if(a<c)
+cout<<a<< " is the smallest number :: ";
+else
+cout<<c<<"  is the smallest number :: ";
+else
+if(b<c)
+cout<<b <<"is the smallest number ";
+else
+cout<<c<<" is the smallest number :: ";
+
+This is the Example how to find the large number by using nested loop  
+
+int a,b,c;
+cout<<"Enter the three number :: ";
+cin>>a>>b>>c;
+if(a>b)
+if(a>c)
+cout<<a<<" is the large number :: ";
+else
+cout<<c<<" is the large number :: ";
+else
+if(b>c)
+cout<<b<<" is the large number :: ";
+else
+cout<<c<<" is the large number :: ";
+
+Program 18
+
+int a,b,c;
+cout<<"Enter the three number :: ";
+cin>>a>>b>>c;
+if(a==b)
+if(a==c)
+cout<<"All number are Equal ";
+else
+cout<<"Different numbers ::";
+else
+cout<<"Different numbers ::";
+
+Program 19
+
+int a,b,c;
+cout<<"Enter the three number ";
+cin>>a>>b>>c;
+if(a>b && a>c)
+cout<<a<<" is the maximum number ";
+else if(b>a && b>c )
+cout<<b<<" is the maximum number ";
+else if(c>a && c>b)
+cout<<c<<" is the maximum number ";
+else
+cout<<"All are Equal ";
+
+Program 20 
+
+char ch;
+cout<<"Enter any character :: ";
+cin>>ch;
+if(ch=='a' || ch=='A' || ch=='e'||ch=='E' || ch=='i'||ch=='I' ||ch=='o' || ch=='O' || ch=='U' ||ch=='u')
+cout<<"You Entered a Vowels "<<ch;
+else
+cout<<"You not Enter the Vowels ";
+
+
+Program 21
+
+int n;
+cout<<"Enter the month :: > ";
+cin>>n;
+if(n==1 || n==3 || n==5 || n==7 || n==8 || n==10 || n==12)
+cout<<"31 DAYS ";
+else if(n==4 || n==6 || n==9 || n==11)
+cout<<"30 DAYS";
+else if(n==2)
+cout<<"28 OR 29 Days ";
+else
+cout<<"Invalid Month ";
+
+Program 22
+
+char ch;
+cout<<"Enter the character :: ";
+cin>>ch;
+if(ch>='A' && ch<='Z')
+cout<<"This is the capital words ";
+else if(ch>='a' && ch<='z')
+cout<<"This is the smallest  words ";
+else if(ch>='0' && ch<='9')
+cout<<"This is the digit number  words ";
+else
+cout<<"Special character ";
+
+
+Program 23 
+
+int n;
+cout<<"Enter the number :: ";
+cin>>n;
+if(n%2!=1)
+cout<<"This is the Even number ";
+else
+cout<<"This is the odd num"ber ";
+
+
+Program 25
+
+int n;
+cout<<"Enter the number of a weekday :: > ";
+cin>>n;
+switch (n)
+{
+case 1:cout<<"Friday";
+   break;
+case 2:cout<<"Saturday";
+break;
+case 3:cout<<"Sunday";
+break;
+case 4:cout<<"Monday ";
+break;
+case 5:cout<<"Tuesday ";
+break;
+case 6:cout<<"Wednesday";
+break;
+case 7:cout<<"Thursday ";
+break;
+default:
+cout<<"Invalid";
+   break;
+}
+
+
+Program 26
+ char ch;
+ cout<<"Enter the Character :: > ";
+ cin>>ch;
+ switch(ch){
+   case 'a':
+   case 'A':
+   cout<<"You Entered a vowels ";
+   break ;
+   case 'e':
+   case 'E':
+   cout<<"You Entered a vowels ";
+   break ;
+   case 'i':
+   case 'I':
+   cout<<"You Entered a vowels ";
+   break ;
+   case 'O':
+   case 'o':
+   cout<<"You Entered a vowels ";
+   break ;
+   case 'U':
+   case 'u':
+   cout<<"You Entered a vowels ";
+   break ;
+
+   default:
+   cout<<"Invalid ";
+   break;
+
+ }
+
+float a,b;
+char n;
+cout<<"Enter a floating point number :: > ";
+cin>>a;
+cout<<"Enter the operator ";
+cin>>n;
+cout<<"Enter a secound floating point number ";
+cin>>b;
+switch(n){
+   case '*':cout<<"The product of the number is ::> "<<a*b;
+break;
+case '+':cout<<"The Adition  of the number is ::> "<<a+b;
+break;
+case '-':cout<<"The substraction of the number is ::> "<<a-b;
+break;
+case '/':cout<<"The division of the number is ::> "<<a/b;
+break;
+default:cout<<"Invalid";
+break;
+}
+
+program 28
+
+cout<<"Enter 1 to convert Fahrenheit to Centigrade "<<endl;
+cout<<"Enter 2 to convert Centigrade to Fahrenheit "<<endl;
+int opp;
+float t,t1,t2;
+cout<<"Enter the opption :: ";
+cin>>opp;
+switch(opp){
+case 1:cout<<"Enter the temperature ";
+cin>>t;
+t1=(t-32)*5.0/9.0;
+cout<<t1;
+break;
+case 2:cout<<"Enter the temperature ";
+cin>>t;
+t2=(9.0/5.0)*t+32;
+cout<<t2;
+break;
+default:
+cout<<"INVALID";
+break;
+
+}
+
+
+Program 29
+
+cout<<"Enter 1 to calculate the cube "<<endl;
+cout<<"Enter 2 to to check the cylinder :: "<<endl;
+cout<<"Enter 3 to check the volume :: > "<<endl;
+int opp,c,radius,height;
+cout<<"Enter the choice :: > ";
+cin>>opp;
+switch(opp){
+   case 1:cout<<"Enter the side of the cude :: ";
+   cin>>c;
+   cout<<c*c*c;
+break;
+case 2:cout<<"Enter the Radius of the cylinder :: ";
+cin>>c;
+cout<<"Enter the height of the cylinder :: > ";
+cin>>height;
+cout<<c*c*M_PI*height;
+break;
+case 3:cout<<"Enter the radius of the  sphere :: ";
+cin>>c;
+cout<<(4.0/3.0)*c*c*c*M_1_PI;
+break;
+
+
+}
+
+Program 30 
+
+int marks;
+cout<<"Enter the marks :: ";
+cin>>marks;
+cout<<"Result is :: "<<(marks>40 ? "Pass " : "Fail ");
+
+Program 31
+
+int n;
+cout<<"Enter a number :: > ";
+cin>>n;
+if(n%3==0  ? cout<<"Divisible by 3 " : cout<<"Not divisible ");
+
+Program 32
+
+int n;
+cout<<"Enter the number :: ";
+cin>>n;
+(n%2==0 ? cout<<"Number is even " : cout<<"Number is odd ");
+
+return 0;
+}

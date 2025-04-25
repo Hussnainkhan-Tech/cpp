@@ -1,0 +1,133 @@
+{ATM MAKER}...................................
+
+long int accNo;
+int pass;
+int balance=10000;
+cout<<"enter the Account number";
+cin>>accNo;
+cout<<"enter the Password";
+cin>>pass;
+if(accNo==123456789 && pass==1122)
+{
+    cout<<"successfully login!";
+    cout<<endl<<"1. cash deposit"<<endl;
+    cout<<"2. withdraw"<<endl;
+    cout<<"3. check balance"<<endl;
+    cout<<"4. send money"<<endl;
+
+int choice;
+cout<<"Select the number";
+cin>>choice;
+switch(choice)
+{
+    case 1:
+int amount;
+cout<<"enter the Amount";
+cin>>amount;
+amount=amount+balance;
+cout<<"congratulation! YOUR AMOUNT IS ::"<<amount;
+break;
+case 2:
+cout<<"enter the amount";
+cin>>amount;
+if(amount<=balance){
+cout<<"OKAY!";
+amount=amount-balance;
+cout<<"withdrawal Successfully!"<<endl<<"Now your balance is ::"<<amount;}
+else
+cout<<"insufficiant balance recharged your Acount";
+
+
+break;
+case 3:
+cout<<"your balance is ::"<<balance;
+break;
+case 4:
+{
+cout<<"enter the account number";
+cin>>accNo;
+cout<<"enter the amount";
+cin>>amount;
+}
+if(amount>0 && amount<=balance){
+cout<<"MONEY SENT!"<<endl;
+balance=balance-amount;
+cout<<"your currently balance is::"<<balance;}
+else
+cout<<"insufficiant balance";
+break;
+default:
+cout<<"agla number tere baap ne likha ha sally!";
+}
+}else
+{
+cout<<"invalid password";
+}
+
+//ROLL NUMBER ...................................
+
+
+
+int n;
+cout<<"enter the roll number";
+cin>>n;
+switch(n)
+{
+    case 35:
+    cout<<"Name--> MASROOR ALI"<<endl;
+    cout<<"Location--> SATALIGHT TOWN"<<endl;
+    cout<<"Phone--> +92111111111"<<endl;
+    break;
+    case 7:
+    cout<<"Name--> WASIF SAHFIQ"<<endl;
+    cout<<"Location--> MASOOM SHAH COLONY"<<endl;
+    cout<<"Phone--> +92111111111"<<endl;
+    break;
+    case 47:
+    cout<<"Name--> HASNIAN KHAN"<<endl;
+    cout<<"Location--> HABIB COLONY"<<endl;
+    cout<<"Phone--> +92111111111"<<endl;
+    break;
+    case 1:
+    cout<<"Name--> WASEEM ABBAS"<<endl;
+    cout<<"Location--> 413/EB"<<endl;
+    cout<<"Phone--> +92111111111"<<endl;
+    break;
+    case 10:
+    cout<<"Name--> GHULAM ALI"<<endl;
+    cout<<"Location--> MARZI PURA"<<endl;
+    cout<<"Phone--> +92111111111"<<endl;
+    break;
+    default:
+    cout<<"DATA TO PURA DEDE GANDU";
+}
+
+{OPRETOR}............................................
+
+
+int a,b;
+char ch;
+cout<<"enter the first number";
+cin>>a;
+cout<<"enter the second number";
+cin>>b;
+cout<<"enter the character";
+cin>>ch;
+switch(ch)
+{
+    case '+':
+    cout<<"sum of the number"<<a+b;
+    break;
+    case '-':
+    cout<<"subtract of the number"<<a-b;
+    break;
+    case '*':
+    cout<<"multiply the number"<<a*b;
+    break;
+    case '/':
+    cout<<"divide the number"<<a/b;
+    break;
+    default:
+    cout<<"BSDK SAHI VALUE DE";
+
+}

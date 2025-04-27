@@ -133,3 +133,94 @@ switch(ch)
     cout<<"BSDK SAHI VALUE DE";
 
 }
+
+
+
+----------------------------------------------------------------
+assignment of switch class record,hod,fees,secrets.
+
+
+
+int choice;
+{
+    cout<<"1. RECORD OF THE STUDENTS"<<endl;
+    cout<<"2. RECORD OF THE HOD"<<endl;
+    cout<<"3. RECORD OF THE FEES SUBMISSION"<<endl;
+    cout<<"4. SECRETS OF THE COLLEGE "<<endl;
+cout<<"enter the number :: ";
+cin>>choice;
+
+    switch(choice)
+    {
+        case 1:
+        int a;
+        
+        cout<<"enter the roll number";
+        cin>>a;
+        if(a==7 || a==35 || a==47 || a==2 || a==9)
+        {
+        if(a==7){
+        cout<<"NAME---> WASIF SAHFIQ"<<endl;
+        cout<<"CLASS-->BS COMPUTER SCIENCE"<<endl;
+        cout<<"PHONE--->12345678"<<endl;
+        cout<<"GRADE 'A'";}
+        if(a==35){
+            cout<<"NAME---> MASROOR ALI"<<endl;
+            cout<<"CLASS-->BS COMPUTER SCIENCE"<<endl;
+            cout<<"PHONE--->12345678"<<endl;
+            cout<<"GRADE 'A'";}
+            if(a==47){
+                cout<<"NAME---> HUSNAIN KHAN"<<endl;
+                cout<<"CLASS-->BS COMPUTER SCIENCE"<<endl;
+                cout<<"PHONE--->12345678"<<endl;
+                cout<<"GRADE 'A'";}
+                if(a==2){
+                    cout<<"NAME---> MUQEEM KHAN"<<endl;
+                    cout<<"CLASS-->BS COMPUTER SCIENCE"<<endl;
+                    cout<<"PHONE--->12345678"<<endl;
+                    cout<<"GRADE 'A'";}
+                    if(a==9){
+                        cout<<"NAME---> AHMAD BHATTI"<<endl;
+                        cout<<"CLASS-->BS COMPUTER SCIENCE"<<endl;
+                        cout<<"PHONE--->12345678"<<endl;
+                        cout<<"GRADE 'A'";}
+                    }
+                    else
+                    cout<<"sally roll number sahi de";
+                    
+        break;
+         case 2:
+       {  string ch1,ch2;
+        { 
+         cout<<"enter the subject ::";
+         cin>>ch1;
+         cout<<"enter the name of teacher :: ";
+         cin>>ch2;
+        }
+        if(ch1=="computer" && ch2== "nadeem_shab")
+         cout<<"HOD OF COMPUTER DEPARTMENT";
+         else if(ch1=="english" && ch2=="akram_shab")
+         cout<<"HOD OF THE ENGLISH";
+         else if(ch1=="islamiyat" && ch2=="riffat")
+         cout<<"basic teacher of BSCS";
+        else if(ch1=="ict" && ch2=="alvi shab")
+        cout<<"teacher of the ICT";
+         else
+         cout<<"not match";
+         break;
+    }
+             case 3: 
+         int n;
+         cout<<"enter the roll number";
+         cin>>n;
+         if(n==7 || n==35 || n==47 || n==2 || n==7)
+         cout<<"COMPLETE THE FEES VOUCHER (THANK YOU)";
+         else 
+         cout<<"BSDK FEES TO JAMA KRWA DE BKL";
+         break;
+         case 4:
+         cout<<"please silent! some secrets up coming............";
+         break;
+         default:
+         cout<<"abby bs itne number hi hein bs kr sally";
+}

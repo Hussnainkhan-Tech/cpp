@@ -1,1 +1,396 @@
-randim
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+    // int n=1;
+    // while(n<=5)
+    // {
+    //     cout<<n<<"\t"<<n*<<endl;
+    //     n++;
+    // }
+
+// int n=1;
+// int sum=0;
+// while(n<=10)
+// {
+//     cout<<n<<endl;
+//     sum=sum+n;
+//     n++;
+// }
+// cout<<"Sum is::"<<sum;
+// int a;
+// int n=1;
+// cout<<"enter the table number ";
+// cin>>a;
+// while(n<=10)
+// {
+//     cout<<a<<"*"<<n<<"="<<a*n<<endl;
+//     n++;
+// // }
+// int a;
+// int sum=0;
+// cout<<"enter the number";
+// cin>>a;
+// while(a!=0)
+// {
+    
+//     int d=a%10;
+//     sum=sum+d;
+//     a=a/10;
+
+// }
+// cout<<"sum is ::"<<sum;
+// int sum=0;
+// int n;
+// cout<<"enter the number";
+// cin>>n;
+// int a=n;
+// while(n!=0)
+// {
+//     int d=n%10;
+//     sum=sum+(d*d*d);
+//     n=n/10;
+// }
+// if(sum==a)
+// cout<<"armstrong number";
+// else
+// cout<<"not";
+
+
+// int a,sum=0;
+// cout<<"enter the number";
+// cin>>a;
+// while(a!=0)
+// {
+//     int d=a%10;
+//     sum=sum+d;
+//     a=a/10;
+// }
+// cout<<"sum"<<sum;
+
+// int a=1;
+// while(a<=10)
+// {
+//     cout<<"Hasnain khan"<<endl;
+//     a++;
+// }
+
+// int a=10;
+// while(a>=1)
+// {
+//     cout<<a<<endl;
+//     a--;
+// }
+
+// int a=1;
+// int sum=0;
+// while(a<=10)
+// {
+//     cout<<a<<endl;
+//     sum=sum+a;
+//     a++;
+// }
+// cout<<"total sum is::"<<sum;
+
+// int a;
+// int sum=0;
+// cout<<"enter the number";
+// cin>>a;
+// while(a!=0)
+// {
+//      int d=a%10;
+//      sum=sum+d;
+//      a=a/10;
+// }
+// cout<<"total sum is::"<<sum;
+
+// int a;
+// int n=1;
+// cout<<"enter the number";
+// cin>>a;
+// while(n<=10)
+// {
+//     cout<<a<<"*"<<n<<"="<<a*n<<endl;
+//     n++;
+// }
+
+
+// int a,n;
+// int sum=0;
+// cout<<"enter the numbr";
+// cin>>a;
+//  a==n;
+// while(a!=0)
+// {
+//     int d=a%10;
+//     sum=sum+(a*a*a);
+//     a=a/10;
+
+// }
+// if (sum==a)
+// cout<<"armstrong numer";
+// else
+// cout<<"not";
+
+// int a; //5!=5*4*3*2*1
+// int f=1;
+// cout<<"enter the number";
+// cin>>a;
+// int i=1;
+// while(a>=i)
+// {
+//     int d=a*i;
+//     f=f*d; //5
+//     a--;
+
+// }
+// cout<<"total is::"<<f;
+
+
+// int a;//5
+// int f=1;
+// cout<<"enter the number";
+// cin>>a;//5
+// int n=1;
+// while(a>=n)//5
+// {
+//     int d=a*n;//5*1=5//4*1=4
+//     f=f*d;//5*4=20*3=60
+//     a--;
+// }
+// cout<<"total is::"<<f;
+
+// int a;
+// int even=0;
+// int odd=0;
+// cout<<"enter the positive numbr";
+// cin>>a;
+// while(a>=0)
+// {
+//     if(a%2==0)
+//     even=even+a;
+//     else
+//     odd=odd+a;
+//     a--;
+// }
+// cout<<"even number sum is::"<<even<<endl;
+// cout<<"odd number sum is ::"<<odd;
+
+// int a;
+// int sum=0;
+// cout<<"enter the number";
+// cin>>a;
+// int n=a;
+// while(a!=0)
+// {
+//     int d=a%10;
+//     sum=sum+(d*d*d);
+//     a=a/10;
+// }
+// if(sum==n)
+// cout<<"armstrong number";
+// else
+// cout<<"not";
+
+// int a,avg;
+// cout<<"enter the number";
+// cin>>a;
+// int max=a,min=a;
+// int sum=0;
+// int count=0;
+// while(a>=0)
+// {
+//     count++;
+//      sum=sum+a;
+//      if(a>max)
+//      max=a;
+//      else if(a<min)
+//      min=a;
+//      cout<<"enter the number";
+//      cin>>a;
+// }
+// avg=sum/count;
+
+// cout<<"total number attempt"<<count<<endl<<"Average of::"<<avg<<endl;
+// cout<<"maximum number is::"<<max<<endl<<"minimum number is::"<<min;
+
+// int s,e;
+// cout<<"enter the starting number";
+// cin>>s;
+// cout<<"enter the ending number";
+// cin>>e;
+
+// while(s<=e)
+// {
+//     if(s%2==0)
+// cout<<s<<endl;
+// s++;}
+
+// int a=1;
+// while(a!=-1){
+// cout<<"enter the numbr";
+// cin>>a;
+// cout<<"you enter ::"<<a<<endl;
+// }
+// cout<<"bsdk glt type krdiya ha ";
+
+
+
+
+// int a,d;
+// cout<<"enter the number";
+// cin>>a;
+// int p=1;
+// int f=1;
+// while(a>=p)
+// {d=p*a;
+// f=f*d;
+// a--;
+// }
+// cout<<"factoial is::"<<f;
+
+// int a;
+// int sum=0;
+// cout<<"enter the number";
+// cin>>a;
+// while(a!=0)
+// {
+//     int d=a%10;//12
+//     sum=sum+d;//2
+//     a=a/10;//1
+    
+// }
+// cout<<"total sum is::"<<sum;
+
+
+// float n=1.0;
+// float a=2.0;
+// int sum=0;
+// while(a<=100)
+// {
+//     n=n+1.0/a;
+//     a=a+2.0;
+    
+// }
+// cout<<"sum is ::"<<n;
+
+// int p;
+// cout<<"enter the positive number";
+// cin>>p;
+// int even=0;
+// int odd=0;
+// while(p>=0)
+// {if(p%2==0)
+//  even=even+p;
+//  else 
+//  odd=odd+p;
+//  p--;
+
+
+
+// }
+// cout<<"sum of even number is::"<<even<<endl;
+// cout<<"sum of odd number is::"<<odd;
+
+// int a,r,sum=0;
+// cout<<"enter the number";
+// cin>>a;
+// r=a;
+// while(a!=0)
+// {
+//     int d=a%10;
+//     sum=sum+(d*d*d);
+//     a=a/10;
+
+// }
+// if(sum==r)
+// cout<<"armstrong";
+// else
+// cout<<"not";
+
+// int s,e;
+// cout<<"enter the starting number";
+// cin>>s;
+// cout<<"enter the ending number";
+// cin>>e;
+// while(s<=e)
+// {
+//    if(s%2==0)
+// cout<<s<<endl;
+//    s++;
+// // }
+// int a=1;
+// while(a!=-1)
+// {
+    
+//     cout<<"enter the number";
+//     cin>>a;
+//     cout<<a;
+// }
+// cout<<"end of the loop";
+
+--j
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    return 0;
+}

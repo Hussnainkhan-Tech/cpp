@@ -1,0 +1,218 @@
+
+1. Even or Odd
+cpp
+Copy
+Edit
+#include<iostream>
+using namespace std;
+int main(){
+    int n;
+    cin >> n;
+    if(n % 2 == 0)
+        cout << "Even";
+    else
+        cout << "Odd";
+}
+2. Print Numbers from 1 to 10
+cpp
+Copy
+Edit
+#include<iostream>
+using namespace std;
+int main(){
+    for(int i=1; i<=10; i++)
+        cout << i << " ";
+}
+3. Sum of First N Numbers
+cpp
+Copy
+Edit
+#include<iostream>
+using namespace std;
+int main(){
+    int n, sum = 0;
+    cin >> n;
+    for(int i=1; i<=n; i++)
+        sum += i;
+    cout << sum;
+}
+4. Find Largest of Two Numbers
+cpp
+Copy
+Edit
+#include<iostream>
+using namespace std;
+int main(){
+    int a, b;
+    cin >> a >> b;
+    if(a > b)
+        cout << a;
+    else
+        cout << b;
+}
+5. Factorial of a Number
+cpp
+Copy
+Edit
+#include<iostream>
+using namespace std;
+int main(){
+    int n, f = 1;
+    cin >> n;
+    for(int i=1; i<=n; i++)
+        f *= i;
+    cout << f;
+}
+6. Multiplication Table
+cpp
+Copy
+Edit
+#include<iostream>
+using namespace std;
+int main(){
+    int n;
+    cin >> n;
+    for(int i=1; i<=10; i++)
+        cout << n << " x " << i << " = " << n*i << endl;
+}
+7. Check Positive, Negative or Zero
+cpp
+Copy
+Edit
+#include<iostream>
+using namespace std;
+int main(){
+    int n;
+    cin >> n;
+    if(n > 0)
+        cout << "Positive";
+    else if(n < 0)
+        cout << "Negative";
+    else
+        cout << "Zero";
+}
+8. Print Array Elements
+cpp
+Copy
+Edit
+#include<iostream>
+using namespace std;
+int main(){
+    int a[5];
+    for(int i=0; i<5; i++)
+        cin >> a[i];
+    for(int i=0; i<5; i++)
+        cout << a[i] << " ";
+}
+9. Sum of Array Elements
+cpp
+Copy
+Edit
+#include<iostream>
+using namespace std;
+int main(){
+    int a[5], sum=0;
+    for(int i=0; i<5; i++)
+        cin >> a[i];
+    for(int i=0; i<5; i++)
+        sum += a[i];
+    cout << sum;
+}
+10. Find Maximum in Array
+cpp
+Copy
+Edit
+#include<iostream>
+using namespace std;
+int main(){
+    int a[5];
+    for(int i=0; i<5; i++)
+        cin >> a[i];
+    int max = a[0];
+    for(int i=1; i<5; i++)
+        if(a[i] > max)
+            max = a[i];
+    cout << max;
+}
+11. Reverse Array
+cpp
+Copy
+Edit
+#include<iostream>
+using namespace std;
+int main(){
+    int a[5];
+    for(int i=0; i<5; i++)
+        cin >> a[i];
+    for(int i=4; i>=0; i--)
+        cout << a[i] << " ";
+}
+12. Count Even Numbers in Array
+cpp
+Copy
+Edit
+#include<iostream>
+using namespace std;
+int main(){
+    int a[5], c=0;
+    for(int i=0; i<5; i++)
+        cin >> a[i];
+    for(int i=0; i<5; i++)
+        if(a[i]%2==0)
+            c++;
+    cout << c;
+}
+13. Count Positive & Negative
+cpp
+Copy
+Edit
+#include<iostream>
+using namespace std;
+int main(){
+    int a[5], pos=0, neg=0;
+    for(int i=0; i<5; i++)
+        cin >> a[i];
+    for(int i=0; i<5; i++){
+        if(a[i]>0)
+            pos++;
+        else if(a[i]<0)
+            neg++;
+    }
+    cout << pos << " " << neg;
+}
+14. Search Element in Array
+cpp
+Copy
+Edit
+#include<iostream>
+using namespace std;
+int main(){
+    int a[5], n, found=0;
+    for(int i=0; i<5; i++)
+        cin >> a[i];
+    cin >> n;
+    for(int i=0; i<5; i++)
+        if(a[i]==n)
+            found=1;
+    if(found)
+        cout << "Found";
+    else
+        cout << "Not Found";
+}
+15. Check Prime Number
+cpp
+Copy
+Edit
+#include<iostream>
+using namespace std;
+int main(){
+    int n, c=0;
+    cin >> n;
+    for(int i=1; i<=n; i++)
+        if(n%i==0)
+            c++;
+    if(c==2)
+        cout << "Prime";
+    else
+        cout << "Not Prime";
+}

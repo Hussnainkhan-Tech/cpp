@@ -294,3 +294,74 @@ using namespace std;
 // }
 //     return 0;
 // }
+
+
+..........{STRUCTURE OF CLASS}...........
+
+#include<iostream>
+using namespace std;
+
+struct Student {
+private:
+    int rollNo;
+    string name;
+    string fatherName;
+    string group;
+    int marks;
+
+public:
+    void setData(int r, string n, string f, string g, int m) {
+        rollNo = r;
+        name = n;
+        fatherName = f;
+        group = g;
+        marks = m;
+    }
+
+    int getRollNo() {
+        return rollNo;
+    }
+
+    void showData() {
+        cout << "Name: " << name << endl;
+        cout << "Father Name: " << fatherName << endl;
+        cout << "Group: " << group << endl;
+        cout << "Marks: " << marks << endl;
+    }
+};
+
+int main() {
+    Student s[5];
+
+    // Data set kar rahe hain using setData()
+    s[0].setData(1, "Ali", "Ahmed", "Science", 450);
+    s[1].setData(2, "Hassan", "Rashid", "Commerce", 420);
+    s[2].setData(3, "Fatima", "Zeeshan", "Arts", 400);
+    s[3].setData(4, "Sara", "Iqbal", "Science", 460);
+    s[4].setData(5, "Umer", "Khalid", "Commerce", 430);
+
+    int roll;
+    cout << "Enter Roll Number (1 to 5): ";
+    cin >> roll;
+
+    if (roll == s[0].getRollNo()) {
+        s[0].showData();
+    }
+    else if (roll == s[1].getRollNo()) {
+        s[1].showData();
+    }
+    else if (roll == s[2].getRollNo()) {
+        s[2].showData();
+    }
+    else if (roll == s[3].getRollNo()) {
+        s[3].showData();
+    }
+    else if (roll == s[4].getRollNo()) {
+        s[4].showData();
+    }
+    else {
+        cout << "Record not found!" << endl;
+    }
+
+    return 0;
+}
